@@ -7,10 +7,22 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 14px;
+}
+body {
+	font-family: "Gilroy", sans-serif;
+	background: $clr-dark;
+}
+
+button {
+	font-family: "Gilroy", sans-serif;
+}
 li {
 	list-style: none;
 }
 
 a {
+	color: inherit;
 	text-decoration: none;
 }

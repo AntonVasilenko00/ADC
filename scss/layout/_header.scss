@@ -1,5 +1,16 @@
 #header {
 	display: flex;
+	align-items: center;
+	color: $clr-white;
+}
+
+.logo-info {
+	display: flex;
+}
+
+.logo-text {
+	width: 154px;
+	font-weight: 400;
 }
 
 .nav-links {

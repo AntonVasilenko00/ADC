@@ -1,5 +1,16 @@
 #header {
   display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.logo-info {
+  display: flex;
+}
+
+.logo-text {
+  width: 154px;
+  font-weight: 400;
 }
 
 .nav-links {
@@ -23,10 +34,24 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  background: #1a1a22;
+}
+
+button {
+  font-family: "Gilroy", sans-serif;
+}
+
 li {
   list-style: none;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
