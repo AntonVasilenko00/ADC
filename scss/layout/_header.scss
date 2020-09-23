@@ -9,6 +9,7 @@
 	display: flex;
 }
 .logo {
+	cursor: pointer;
 	width: 7rem;
 	img {
 		width: 100%;
@@ -41,6 +42,7 @@
 }
 
 .search-btn {
+	cursor: pointer;
 	margin-left: 3.92rem;
 	min-width: 1.78rem;
 	img {
@@ -72,7 +74,6 @@
 }
 
 .split-btn {
-	font-family: "Gilroy", sans-serif;
 	margin-left: 3.92rem;
 }
 
