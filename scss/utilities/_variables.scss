@@ -7,11 +7,13 @@ $clr-gray: #d6d6d6;
 $clr-dark: #1a1a22;
 $clr-semi-dark: #282831;
 
-//fonts
+//Border
+$clr-split-btn-border: #c4c4c4;
+$clr-split-btn-divider: #616d79;
 
-// opacity;
-$opacity-subtext-header: 50%;
+//Bools
+$useRoundedCorners: true;
 
-//margin
-$ml: 367px;
-$mr: 375px;
+//borders
+$btn-rounded: 100px;
+$btn-squared: 4px;
