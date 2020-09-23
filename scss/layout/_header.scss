@@ -8,6 +8,7 @@
 .logo-info {
 	display: flex;
 }
+
 .logo {
 	cursor: pointer;
 	width: 7rem;
@@ -24,9 +25,11 @@
 	font-size: 1.07rem;
 	font-weight: 400;
 }
+
 #header-nav {
 	margin-left: 3.92rem;
 }
+
 .nav-links {
 	display: flex;
 	align-items: center;
@@ -40,6 +43,41 @@
 		white-space: nowrap;
 	}
 }
+
+// Submenu
+.toggle-clients {
+	.clients-submenu {
+		margin-top: 14px;
+		transform: translateY(-20%);
+		position: absolute;
+		transition: visibility 0s, transform 0.5s, opacity 0.8s ease-out;
+		visibility: hidden;
+		opacity: 0;
+		line-height: 2.64rem;
+		padding: 1.64rem 2.3rem;
+		text-align: left;
+		color: $clr-black;
+		li {
+			margin: 0 0 1.8rem 0;
+		}
+	}
+	&:hover {
+		img {
+			transition: all 0.2s linear;
+			transform: rotate(180deg);
+		}
+		display: block;
+		.clients-submenu {
+			transform: translateY(0);
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+.clients-submenu {
+	background: $clr-white;
+}
+// end of Submenu
 
 .search-btn {
 	cursor: pointer;

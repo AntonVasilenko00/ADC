@@ -206,6 +206,42 @@
   white-space: nowrap;
 }
 
+.toggle-clients .clients-submenu {
+  margin-top: 14px;
+  transform: translateY(-20%);
+  position: absolute;
+  transition: visibility 0s, transform 0.5s, opacity 0.8s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  line-height: 2.64rem;
+  padding: 1.64rem 2.3rem;
+  text-align: left;
+  color: #000;
+}
+
+.toggle-clients .clients-submenu li {
+  margin: 0 0 1.8rem 0;
+}
+
+.toggle-clients:hover {
+  display: block;
+}
+
+.toggle-clients:hover img {
+  transition: all 0.2s linear;
+  transform: rotate(180deg);
+}
+
+.toggle-clients:hover .clients-submenu {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 1;
+}
+
+.clients-submenu {
+  background: #fff;
+}
+
 .search-btn {
   cursor: pointer;
   margin-left: 3.92rem;
