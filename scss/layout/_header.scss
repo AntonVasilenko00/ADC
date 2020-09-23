@@ -28,17 +28,19 @@
 }
 .nav-links {
 	display: flex;
+	align-items: center;
 	li {
 		text-transform: uppercase;
 		line-height: 1.36;
 		letter-spacing: 0.15em;
 		margin-left: 3.07rem;
+		white-space: nowrap;
 	}
 }
 
 .search-btn {
 	margin-left: 3.92rem;
-	width: 1.78rem;
+	min-width: 1.78rem;
 	img {
 		width: 100%;
 		height: auto;
@@ -49,12 +51,14 @@
 	margin-left: 3.92rem;
 }
 
+.active-phone {
+	white-space: nowrap;
+}
 .phone-info {
 	font-size: 0.86rem;
 }
 
 .phone-number {
-	// white-space: nowrap;
 	font-size: 1.7rem;
 	font-weight: 600;
 }
