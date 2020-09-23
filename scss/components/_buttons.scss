@@ -1,0 +1,57 @@
+.btn {
+	display: inline-block;
+	padding: 16px;
+	@if $useRoundedCorners {
+		border-radius: $btn-rounded;
+	} @else {
+		border-radius: $btn-squared;
+	}
+}
+
+.btn-blue {
+	background-color: $clr-blue;
+	color: $clr-white;
+}
+
+.btn-outline {
+	background: transparent;
+	border: 1px solid $clr-blue;
+	color: $clr-blue;
+}
+
+//split btn
+.split-btn {
+	white-space: nowrap;
+	// font-size: 0;
+	display: flex;
+	align-items: center;
+	// position: relative;
+	// display: inline;
+	img {
+		// padding: 5px;
+		transform: translateY(-1px);
+		margin: 0;
+	}
+}
+
+.btn-split-left {
+	color: $clr-white;
+	display: inline-block;
+	@include split-left-border;
+}
+.btn-split-right {
+	color: $clr-white;
+	display: inline-block;
+	@include split-right-border;
+}
+
+.btn-split-divider {
+}
+
+.dropdown {
+	// &:hover {
+	// 	.dropdown-content {
+	// 		display: block;
+	// 	}
+	// }
+}
