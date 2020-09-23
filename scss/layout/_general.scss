@@ -17,9 +17,10 @@ body {
 }
 
 button {
-	font-family: "Gilroy", sans-serif;
+	background: none;
+	font-family: inherit;
+	font-size: inherit;
 	font-weight: normal;
-	font-size: 1rem;
 }
 li {
 	list-style: none;

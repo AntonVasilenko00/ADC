@@ -30,6 +30,8 @@
 	display: flex;
 	align-items: center;
 	li {
+		display: flex;
+		align-items: center;
 		text-transform: uppercase;
 		line-height: 1.36;
 		letter-spacing: 0.15em;
@@ -56,6 +58,12 @@
 }
 .phone-info {
 	font-size: 0.86rem;
+	font-family: "Gilroy";
+}
+
+.phone-wrapper {
+	display: flex;
+	align-items: center;
 }
 
 .phone-number {
@@ -64,11 +72,13 @@
 }
 
 .split-btn {
+	font-family: "Gilroy", sans-serif;
 	margin-left: 3.92rem;
 }
 
 //
 .angle-down {
+	margin-left: 0.36rem;
 }
 .submenu {
 	display: none;
