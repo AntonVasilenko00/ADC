@@ -1,6 +1,8 @@
 .btn {
+	cursor: pointer;
+	font-size: 1rem;
 	display: inline-block;
-	padding: 16px;
+	padding: 1rem 3.6rem;
 	@if $useRoundedCorners {
 		border-radius: $btn-rounded;
 	} @else {
@@ -22,24 +24,22 @@
 //split btn
 .split-btn {
 	white-space: nowrap;
-	// font-size: 0;
 	display: flex;
 	align-items: center;
-	// position: relative;
-	// display: inline;
+
 	img {
-		// padding: 5px;
-		transform: translateY(-1px);
 		margin: 0;
 	}
 }
 
 .btn-split-left {
+	padding: 1.14rem;
 	color: $clr-white;
 	display: inline-block;
 	@include split-left-border;
 }
 .btn-split-right {
+	padding: 1.14rem;
 	color: $clr-white;
 	display: inline-block;
 	@include split-right-border;

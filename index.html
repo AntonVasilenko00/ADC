@@ -27,15 +27,17 @@
 					<li><a href="#">проекты</a></li>
 					<li class="toggle-clients">
 						<a href="#">клиентам</a><img src="/dist/assets/icons/caret-down.svg" alt="" class="angle-down" />
-						<ul class="clients-submenu">
-							<li><a href="#">Производство</a></li>
-							<li><a href="#">Доставка и установка</a></li>
-							<li><a href="#">Оплата</a></li>
-							<li><a href="#">Гарантия</a></li>
-							<li><a href="#">Цены</a></li>
-							<li><a href="#">Частые вопросы</a></li>
-							<li><a href="#">Требования</a></li>
-						</ul>
+						<div class="submenu-wrapper">
+							<ul class="clients-submenu">
+								<li><a href="#">Производство</a></li>
+								<li><a href="#">Доставка и установка</a></li>
+								<li><a href="#">Оплата</a></li>
+								<li><a href="#">Гарантия</a></li>
+								<li><a href="#">Цены</a></li>
+								<li><a href="#">Частые вопросы</a></li>
+								<li><a href="#">Требования</a></li>
+							</ul>
+						</div>
 					</li>
 					<li><a href="#">отзывы</a></li>
 					<li><a href="#">акции</a></li>
@@ -45,6 +47,12 @@
 			<!-- Search -->
 			<div class="search-btn">
 				<img src="/dist/assets/icons/search.svg" alt="" />
+				<div class="search-dropdown">
+					<form action="" id="search-form">
+						<input type="text" placeholder="введите то что вы хотите найти" />
+						<button type="submit" class="btn btn-blue">Найти</button>
+					</form>
+				</div>
 			</div>
 
 			<!-- Dropdown phone -->

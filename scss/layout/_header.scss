@@ -41,13 +41,18 @@
 		letter-spacing: 0.15em;
 		margin-left: 3.07rem;
 		white-space: nowrap;
+		a:hover {
+			text-shadow: 1px 2px 5px $clr-white;
+		}
 	}
 }
 
 // Submenu
 .toggle-clients {
+	position: relative;
 	.clients-submenu {
-		margin-top: 14px;
+		border-radius: 1rem;
+		background: $clr-white;
 		transform: translateY(-20%);
 		position: absolute;
 		transition: visibility 0s, transform 0.5s, opacity 0.8s ease-out;
@@ -58,15 +63,37 @@
 		text-align: left;
 		color: $clr-black;
 		li {
+			text-shadow: none;
 			margin: 0 0 1.8rem 0;
+			&:last-child {
+				margin: 0;
+			}
+			a:hover {
+				transition: all 0.1s ease-out;
+				color: $clr-blue;
+			}
 		}
 	}
+	.submenu-wrapper {
+		// display: block;
+		width: 100%;
+		height: auto;
+		position: absolute;
+		padding-top: 1rem;
+	}
+	img {
+		transition: all 0.2s ease;
+	}
 	&:hover {
-		img {
-			transition: all 0.2s linear;
-			transform: rotate(180deg);
-		}
 		display: block;
+		a {
+			transition: all 0.2s linear;
+			text-shadow: 1px 2px 5px $clr-white;
+		}
+
+		img {
+			transform: rotate(180deg) translateY(1px);
+		}
 		.clients-submenu {
 			transform: translateY(0);
 			visibility: visible;
@@ -74,11 +101,10 @@
 		}
 	}
 }
-.clients-submenu {
-	background: $clr-white;
-}
+
 // end of Submenu
 
+// search
 .search-btn {
 	cursor: pointer;
 	margin-left: 3.92rem;
@@ -87,7 +113,49 @@
 		width: 100%;
 		height: auto;
 	}
+	&:hover {
+		.search-dropdown {
+			transition: all 0.2s linear;
+			transform: translateY(0);
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 }
+
+.search-dropdown {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	transform: translateY(-2rem);
+	opacity: 0;
+	visibility: hidden;
+}
+
+#search-form {
+	margin-top: 4.3rem;
+	display: flex;
+	align-items: center;
+	input {
+		font-size: 1.3rem;
+		position: absolute;
+		outline: none;
+		padding: 0.35rem 27.7rem;
+		height: 5rem;
+		width: 100%;
+		&::placeholder {
+			font-size: 1.3rem;
+			color: rgba($clr-black, 0.3);
+			text-transform: uppercase;
+		}
+	}
+	button {
+		font-size: 1.28rem;
+		position: absolute;
+		margin: 0 70%;
+	}
+}
+//end of search
 
 .header-contact {
 	margin-left: 3.92rem;
@@ -117,6 +185,8 @@
 
 //
 .angle-down {
+	width: 0.9rem;
+	height: auto;
 	margin-left: 0.36rem;
 }
 .submenu {

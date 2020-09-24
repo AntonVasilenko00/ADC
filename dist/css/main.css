@@ -206,8 +206,17 @@
   white-space: nowrap;
 }
 
+.nav-links li a:hover {
+  text-shadow: 1px 2px 5px #fff;
+}
+
+.toggle-clients {
+  position: relative;
+}
+
 .toggle-clients .clients-submenu {
-  margin-top: 14px;
+  border-radius: 1rem;
+  background: #fff;
   transform: translateY(-20%);
   position: absolute;
   transition: visibility 0s, transform 0.5s, opacity 0.8s ease-out;
@@ -220,26 +229,47 @@
 }
 
 .toggle-clients .clients-submenu li {
+  text-shadow: none;
   margin: 0 0 1.8rem 0;
+}
+
+.toggle-clients .clients-submenu li:last-child {
+  margin: 0;
+}
+
+.toggle-clients .clients-submenu li a:hover {
+  transition: all 0.1s ease-out;
+  color: #528dc7;
+}
+
+.toggle-clients .submenu-wrapper {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  padding-top: 1rem;
+}
+
+.toggle-clients img {
+  transition: all 0.2s ease;
 }
 
 .toggle-clients:hover {
   display: block;
 }
 
-.toggle-clients:hover img {
+.toggle-clients:hover a {
   transition: all 0.2s linear;
-  transform: rotate(180deg);
+  text-shadow: 1px 2px 5px #fff;
+}
+
+.toggle-clients:hover img {
+  transform: rotate(180deg) translateY(1px);
 }
 
 .toggle-clients:hover .clients-submenu {
   transform: translateY(0);
   visibility: visible;
   opacity: 1;
-}
-
-.clients-submenu {
-  background: #fff;
 }
 
 .search-btn {
@@ -251,6 +281,49 @@
 .search-btn img {
   width: 100%;
   height: auto;
+}
+
+.search-btn:hover .search-dropdown {
+  transition: all 0.2s linear;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.search-dropdown {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2rem);
+  opacity: 0;
+  visibility: hidden;
+}
+
+#search-form {
+  margin-top: 4.3rem;
+  display: flex;
+  align-items: center;
+}
+
+#search-form input {
+  font-size: 1.3rem;
+  position: absolute;
+  outline: none;
+  padding: 0.35rem 27.7rem;
+  height: 5rem;
+  width: 100%;
+}
+
+#search-form input::placeholder {
+  font-size: 1.3rem;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+#search-form button {
+  font-size: 1.28rem;
+  position: absolute;
+  margin: 0 70%;
 }
 
 .header-contact {
@@ -281,6 +354,8 @@
 }
 
 .angle-down {
+  width: 0.9rem;
+  height: auto;
   margin-left: 0.36rem;
 }
 
@@ -311,6 +386,8 @@ body {
 }
 
 button {
+  outline: none;
+  border: none;
   background: none;
   font-family: inherit;
   font-size: inherit;
@@ -327,8 +404,10 @@ a {
 }
 
 .btn {
+  cursor: pointer;
+  font-size: 1rem;
   display: inline-block;
-  padding: 16px;
+  padding: 1rem 3.6rem;
   border-radius: 100px;
 }
 
@@ -350,11 +429,11 @@ a {
 }
 
 .split-btn img {
-  transform: translateY(-1px);
   margin: 0;
 }
 
 .btn-split-left {
+  padding: 1.14rem;
   color: #fff;
   display: inline-block;
   border: none;
@@ -366,6 +445,7 @@ a {
 }
 
 .btn-split-right {
+  padding: 1.14rem;
   color: #fff;
   display: inline-block;
   border: none;
