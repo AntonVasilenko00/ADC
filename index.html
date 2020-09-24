@@ -46,11 +46,11 @@
 			</nav>
 			<!-- Search -->
 			<div class="search-btn">
-				<img src="/dist/assets/icons/search.svg" alt="" />
-				<div class="search-dropdown">
+				<img src="/dist/assets/icons/search.svg" alt="" onclick="toggleSearchDropdown()" />
+				<div class="search-dropdown show-searchbar" id="searchDrop">
 					<form action="" id="search-form">
-						<input type="text" placeholder="введите то что вы хотите найти" />
-						<button type="submit" class="btn btn-blue">Найти</button>
+						<input type="text" placeholder="введите то что вы хотите найти" id="search-field" />
+						<button type="submit" class="btn btn-blue" onclick="toggleSearchDropdown()">Найти</button>
 					</form>
 				</div>
 			</div>
@@ -127,5 +127,6 @@
 				</div>
 			</div>
 		</header>
+		<script src="dist/js/main.js"></script>
 	</body>
 </html>

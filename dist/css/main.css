@@ -273,21 +273,14 @@
 }
 
 .search-btn {
-  cursor: pointer;
   margin-left: 3.92rem;
   min-width: 1.78rem;
 }
 
 .search-btn img {
+  cursor: pointer;
   width: 100%;
   height: auto;
-}
-
-.search-btn:hover .search-dropdown {
-  transition: all 0.2s linear;
-  transform: translateY(0);
-  opacity: 1;
-  visibility: visible;
 }
 
 .search-dropdown {
@@ -324,6 +317,12 @@
   font-size: 1.28rem;
   position: absolute;
   margin: 0 70%;
+}
+
+.show {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
 .header-contact {
