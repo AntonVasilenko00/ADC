@@ -162,6 +162,7 @@
 }
 
 .show {
+	transition: all 0.3s linear;
 	transform: translateY(0);
 	opacity: 1;
 	visibility: visible;
