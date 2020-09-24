@@ -111,3 +111,27 @@
 .video-bottom-text {
 	font-size: 1.21rem;
 }
+
+.brandings {
+	@include container();
+	margin-top: 8rem;
+	max-width: 100%;
+	white-space: nowrap;
+	overflow-x: hidden;
+	padding-bottom: 2.8rem;
+	border-bottom: 1px solid rgba($clr-black, 0.1);
+	.brands {
+		margin-top: 1.5rem;
+	}
+	p {
+		font-size: 1.28rem;
+		font-weight: 600;
+	}
+	img {
+		&:first-child {
+			margin: 0;
+		}
+		margin-left: 3.78rem;
+		// transform: scale(calc(100%-10rem));
+	}
+}

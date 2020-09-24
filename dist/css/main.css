@@ -531,6 +531,33 @@ a {
   font-size: 1.21rem;
 }
 
+.brandings {
+  padding: 0 calc(50% - 42rem);
+  margin-top: 8rem;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  padding-bottom: 2.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.brandings .brands {
+  margin-top: 1.5rem;
+}
+
+.brandings p {
+  font-size: 1.28rem;
+  font-weight: 600;
+}
+
+.brandings img {
+  margin-left: 3.78rem;
+}
+
+.brandings img:first-child {
+  margin: 0;
+}
+
 .btn {
   cursor: pointer;
   font-size: 1.1rem;
