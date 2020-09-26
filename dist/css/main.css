@@ -820,3 +820,76 @@ a {
   width: 3.36rem;
   height: 3.36rem;
 }
+
+.choice-box {
+  display: flex;
+  color: #000;
+  border-radius: 1rem;
+  width: 100%;
+  height: 57.36rem;
+  background: #fff;
+}
+
+.choice-left {
+  width: 50.86rem;
+  height: 49.43rem;
+  margin-left: 5.2rem;
+  padding-top: 4.43rem;
+}
+
+.choice-left h1 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.choice-left p {
+  line-height: 1.47rem;
+  font-weight: 400;
+  font-size: 1.21rem;
+  margin-top: 1.28rem;
+}
+
+.choice-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 2.93rem;
+  padding: 2rem 1.6rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.43rem 2.86rem rgba(0, 0, 0, 0.07);
+  width: 21.14rem;
+  height: 44.6rem;
+}
+
+.bonus-box {
+  display: flex;
+  align-items: center;
+  padding: 0 1.43rem;
+  font-size: 1rem;
+  border-radius: 0.36rem;
+  width: 100%;
+  height: 5.71rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.bonus-box:first-child {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bonus-box p {
+  margin-left: 1rem;
+}
+
+.bonus-box p img {
+  transform: translateY(0.2rem) translateX(0.2rem);
+  width: 1rem;
+  height: 1rem;
+}
+
+.choice-right-link {
+  margin-top: 3.78rem;
+  display: inline-block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}
