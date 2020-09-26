@@ -36,10 +36,6 @@
 	}
 	.btn-blue {
 		padding: 2rem 5.5rem;
-		transition: all 0.1s ease-out;
-		&:hover {
-			background: darken($clr-blue, 4);
-		}
 	}
 	.btn-outline {
 		margin-left: 1.78rem;

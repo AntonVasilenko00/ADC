@@ -39,7 +39,7 @@
 		width: 1.78rem;
 		height: 1.78rem;
 		background: $clr-blue;
-		padding: 5px;
+		padding: 0.36rem;
 	}
 }
 
@@ -63,11 +63,22 @@
 
 // Services box
 .services-box {
+	border-radius: 1rem;
+	height: 33.5rem;
+	display: flex;
+	justify-content: space-between;
+	// padding: 7.35rem 0 6rem 6rem;
+	background: $clr-gray-2;
 	img {
 		width: 51rem;
 		height: auto;
 	}
 }
+
+.services-box-main {
+	margin: 7.35rem 0 0 6rem;
+}
+
 .services-block-title {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
@@ -75,14 +86,39 @@
 	line-height: 1.15;
 }
 
+.services-links {
+	margin-top: 2rem;
+	column-count: 2;
+	column-gap: 2.28rem;
+}
+
 .services-link {
+	transition: all 0.1s linear;
 	font-size: 1.07rem;
 	line-height: 2.1;
 	border-bottom: 1px solid rgba($clr-black, 0.2);
 	color: rgba($clr-black, 0.5);
+	&:hover {
+		color: $clr-blue;
+		border-color: inherit;
+	}
+}
+
+.btn-and-text {
+	display: flex;
+	margin-top: 4.28rem;
+	button {
+		white-space: nowrap;
+		font-weight: medium;
+		padding: 1.28rem 2.28rem;
+	}
 }
 
 .services-box-info {
+	position: absolute;
+	margin-top: 0.6rem;
+	margin-left: 13%;
+	white-space: nowrap;
 	width: 12.5rem;
 	font-size: 1.07rem;
 	line-height: 1.3;

@@ -13,6 +13,10 @@
 .btn-blue {
 	background-color: $clr-blue;
 	color: $clr-white;
+	transition: all 0.1s ease-out;
+	&:hover {
+		background: darken($clr-blue, 4);
+	}
 }
 
 .btn-outline {

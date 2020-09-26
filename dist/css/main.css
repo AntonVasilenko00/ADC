@@ -169,6 +169,11 @@
 .btn-blue {
   background-color: #528dc7;
   color: #fff;
+  transition: all 0.1s ease-out;
+}
+
+.btn-blue:hover {
+  background: #4383c2;
 }
 
 .btn-outline {
@@ -504,11 +509,6 @@ a {
 
 .intro-buttons .btn-blue {
   padding: 2rem 5.5rem;
-  transition: all 0.1s ease-out;
-}
-
-.intro-buttons .btn-blue:hover {
-  background: #4383c2;
 }
 
 .intro-buttons .btn-outline {
@@ -654,7 +654,7 @@ a {
   width: 1.78rem;
   height: 1.78rem;
   background: #528dc7;
-  padding: 5px;
+  padding: 0.36rem;
 }
 
 .scroll-link {
@@ -675,9 +675,21 @@ a {
   color: #fff;
 }
 
+.services-box {
+  border-radius: 1rem;
+  height: 33.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: #f5f5f5;
+}
+
 .services-box img {
   width: 51rem;
   height: auto;
+}
+
+.services-box-main {
+  margin: 7.35rem 0 0 6rem;
 }
 
 .services-block-title {
@@ -687,14 +699,41 @@ a {
   line-height: 1.15;
 }
 
+.services-links {
+  margin-top: 2rem;
+  column-count: 2;
+  column-gap: 2.28rem;
+}
+
 .services-link {
+  transition: all 0.1s linear;
   font-size: 1.07rem;
   line-height: 2.1;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.5);
 }
 
+.services-link:hover {
+  color: #528dc7;
+  border-color: inherit;
+}
+
+.btn-and-text {
+  display: flex;
+  margin-top: 4.28rem;
+}
+
+.btn-and-text button {
+  white-space: nowrap;
+  font-weight: medium;
+  padding: 1.28rem 2.28rem;
+}
+
 .services-box-info {
+  position: absolute;
+  margin-top: 0.6rem;
+  margin-left: 13%;
+  white-space: nowrap;
   width: 12.5rem;
   font-size: 1.07rem;
   line-height: 1.3;
