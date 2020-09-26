@@ -51,7 +51,6 @@
 //Left part
 
 .choice-left {
-	// background: rgba(blue, 0.2);
 	width: 50.86rem;
 	height: 49.43rem;
 	margin-left: 5.2rem;
@@ -69,8 +68,19 @@
 	}
 }
 
-.choice-right {
+.choice-boxes {
+	display: flex;
+	flex-wrap: wrap;
 }
+
+.choice-small-box {
+	border: 1px solid #efefef;
+	box-shadow: 0 0.714rem 5rem rgba(82, 141, 199, 0.1);
+	border-radius: 0.36rem;
+	width: 16.07rem;
+	height: 14.43rem;
+}
+//Right-part
 
 .choice-right-box {
 	display: flex;
@@ -80,7 +90,6 @@
 	padding: 2rem 1.6rem;
 	border-radius: 1rem;
 	box-shadow: 0 0.43rem 2.86rem rgba($clr-black, 0.07);
-	// background: rgba(red, 0.2);
 	width: 21.14rem;
 	height: 44.6rem;
 }

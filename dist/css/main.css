@@ -850,6 +850,19 @@ a {
   margin-top: 1.28rem;
 }
 
+.choice-boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.choice-small-box {
+  border: 1px solid #efefef;
+  box-shadow: 0 0.714rem 5rem rgba(82, 141, 199, 0.1);
+  border-radius: 0.36rem;
+  width: 16.07rem;
+  height: 14.43rem;
+}
+
 .choice-right-box {
   display: flex;
   flex-direction: column;
