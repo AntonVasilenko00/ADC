@@ -3,11 +3,7 @@
 	font-size: 1.1rem;
 	display: inline-block;
 	padding: 1rem 2rem;
-	@if $useRoundedCorners {
-		border-radius: $btn-rounded;
-	} @else {
-		border-radius: $btn-squared;
-	}
+	@include border-radius();
 }
 
 .btn-blue {
@@ -58,4 +54,27 @@
 	// 		display: block;
 	// 	}
 	// }
+}
+
+.btn-arrow-outline {
+	cursor: pointer;
+	padding: 5px;
+	border: 1px solid $clr-blue;
+	@include border-radius();
+	width: 4.28rem;
+	height: 4.28rem;
+}
+
+.arrow-left {
+	background: url(/dist/assets/icons/arrow-left.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.6rem;
+}
+
+.arrow-right {
+	background: url(/dist/assets/icons/arrow-right.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.6rem;
 }

@@ -29,3 +29,19 @@
 @mixin container() {
 	padding: 0 calc(50% - 42rem);
 }
+
+@mixin border-radius() {
+	@if $useRoundedCorners {
+		border-radius: $btn-rounded;
+	} @else {
+		border-radius: $btn-squared;
+	}
+}
+
+@mixin sroll-box-border-radius() {
+	@if $useRoundedCorners {
+		border-radius: $btn-rounded $btn-squared $btn-squared $btn-rounded;
+	} @else {
+		border-radius: $btn-squared;
+	}
+}
