@@ -1,0 +1,39 @@
+#services-choice {
+	@include container();
+	height: 95rem;
+	background: url(/dist/assets/img/services-choice-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $clr-white;
+	padding-top: 6.92rem;
+	padding-bottom: 7.64rem;
+}
+
+.service-choice-title {
+	letter-spacing: 0.05em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2.14rem;
+	font-weight: 400;
+}
+
+.service-choice-info {
+	text-align: center;
+	p {
+		font-weight: 400;
+		margin-top: 1rem;
+		font-size: 1.21rem;
+		// width: 38rem;
+		letter-spacing: 0.04em;
+		line-height: 1.65;
+	}
+}
+
+.percent-icon {
+	margin-top: 3.43rem;
+	display: inline-block;
+	text-align: center;
+	width: 3.36rem;
+	height: 3.36rem;
+}
