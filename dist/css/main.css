@@ -929,6 +929,9 @@ a {
 }
 
 .text-box {
+  cursor: pointer;
+  opacity: 0.6;
+  border: 1px solid #efefef;
   display: flex;
   align-items: center;
   border-radius: 0.28rem;
@@ -940,8 +943,22 @@ a {
 }
 
 .text-box p {
-  width: 100%;
-  margin: 0 0 0 1.28rem;
+  cursor: pointer;
+  width: 90%;
+  margin: 0 0 0 2rem;
+}
+
+.text-box .checkmark {
+  background: #efefef;
+}
+
+input:checked + div > .checkmark::after {
+  display: block;
+}
+
+input:checked + .text-box {
+  opacity: 1;
+  border: none;
 }
 
 .choice-left-buttons {

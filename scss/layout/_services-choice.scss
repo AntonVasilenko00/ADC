@@ -145,20 +145,35 @@
 }
 
 .text-box {
+	cursor: pointer;
+	opacity: 0.6;
+	border: 1px solid rgba($clr-gray-3, 1);
 	display: flex;
 	align-items: center;
 	border-radius: 0.28rem;
 	padding: 1.42rem;
 	margin: 0 0 1.57rem;
 	p {
-		width: 100%;
-		margin: 0 0 0 1.28rem;
+		cursor: pointer;
+		width: 90%;
+		margin: 0 0 0 2rem;
 	}
 	width: 16.07rem;
 	height: 6.42rem;
 	box-shadow: 0 0.71rem 5rem rgba(82, 141, 199, 0.14);
+	.checkmark {
+		background: $clr-gray-3;
+	}
 }
 
+input:checked + div > .checkmark::after {
+	display: block;
+}
+
+input:checked + .text-box {
+	opacity: 1;
+	border: none;
+}
 .choice-left-buttons {
 	display: flex;
 	justify-content: space-between;
