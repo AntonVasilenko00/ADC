@@ -962,8 +962,18 @@ input:checked + .text-box {
 }
 
 .choice-left-buttons {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+}
+
+.next {
+  display: flex;
+  align-items: center;
+}
+
+.next img {
+  margin-left: 0.57rem;
 }
 
 .choice-right {
@@ -1009,6 +1019,7 @@ input:checked + .text-box {
 
 .choice-right-link {
   margin-top: 3.78rem;
+  margin-left: 1.71rem;
   display: inline-block;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.5);
