@@ -822,6 +822,7 @@ a {
 }
 
 .choice-box {
+  margin-top: 4.86rem;
   display: flex;
   color: #000;
   border-radius: 1rem;
@@ -844,6 +845,7 @@ a {
 }
 
 .choice-left p {
+  width: 48.9rem;
   line-height: 1.47rem;
   font-weight: 400;
   font-size: 1.21rem;
@@ -851,16 +853,63 @@ a {
 }
 
 .choice-boxes {
+  margin-top: 3.5rem;
   display: flex;
   flex-wrap: wrap;
+  gap: 1.28rem;
+}
+
+.choice-boxes .choice-small-box {
+  margin: 0 0 2.21rem 0;
 }
 
 .choice-small-box {
+  padding: 0.71rem;
   border: 1px solid #efefef;
   box-shadow: 0 0.714rem 5rem rgba(82, 141, 199, 0.1);
   border-radius: 0.36rem;
   width: 16.07rem;
   height: 14.43rem;
+  text-align: center;
+}
+
+.choice-small-box p {
+  width: 100%;
+}
+
+.small-box-img-wrapper {
+  border-radius: 0.36rem;
+  width: 100%;
+  height: 8.64rem;
+  background: #efefef;
+}
+
+.small-box-img-wrapper img {
+  width: 12.43rem;
+  height: 100%;
+}
+
+.text-box {
+  border-radius: 0.28rem;
+  padding: 1.71rem;
+  margin: 0 0 1.57rem;
+  width: 16.07rem;
+  height: 6.42rem;
+  box-shadow: 0 0.71rem 5rem rgba(82, 141, 199, 0.14);
+}
+
+.text-box p {
+  width: 100%;
+  margin: 0;
+}
+
+.choice-left-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.choice-right {
+  margin-left: 4.5rem;
 }
 
 .choice-right-box {
