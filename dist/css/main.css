@@ -1024,3 +1024,128 @@ input:checked + .text-box {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.5);
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 5.6rem;
+}
+
+#projects .btn {
+  padding: 2.14rem 3.14rem;
+  margin-top: 3.4rem;
+}
+
+.projects-title {
+  margin-top: 5.57rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.projects-subtitle {
+  text-align: center;
+  font-size: 1.57rem;
+  margin-top: 2.42rem;
+}
+
+.projects-main {
+  margin-top: 5.07rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-box {
+  padding: 0;
+  margin: 0;
+  width: 20%;
+  height: 20vw;
+}
+
+.project-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.project-info {
+  padding: 2.28rem;
+  background: url(/dist/assets/img/projects-photo/info-projects.png);
+  color: #fff;
+}
+
+.project-info h2 {
+  letter-spacing: 0.05em;
+  line-height: 1.69;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.14rem;
+}
+
+.project-info h3 {
+  margin-top: 1.78rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 0.71rem;
+  margin-right: 0.71rem;
+  font-size: 0.8rem;
+  padding: 0.35rem 0.71rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+.project-info .works {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project-info .works p {
+  margin-top: 0.71rem;
+  font-weight: medium;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.project-info .keys {
+  margin-top: 1.4rem;
+  display: flex;
+}
+
+.project-info .work-made {
+  margin-left: 2rem;
+}
+
+.project-info .work-made p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.project-info .work-made h4 {
+  margin-top: 0.71rem;
+  font-size: 1.14rem;
+  font-weight: 700;
+}
+
+.project-info .work-time p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.project-info .work-time h4 {
+  margin-top: 0.71rem;
+  font-size: 1.14rem;
+  font-weight: 700;
+}
+
+.project-info button {
+  cursor: pointer;
+  margin-top: 2rem;
+  color: #fff;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.28rem;
+}
