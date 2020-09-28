@@ -1,0 +1,24 @@
+#comments {
+	@include container();
+}
+
+.reviews {
+	margin-top: 5.36rem;
+	display: flex;
+	justify-content: space-between;
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 2.14rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+	}
+}
+
+.comment-links {
+	display: flex;
+}
+
+.thanks-letters {
+	display: flex;
+}

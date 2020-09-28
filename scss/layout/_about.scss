@@ -7,6 +7,27 @@
 	background-size: cover;
 	color: $clr-white;
 	height: 54rem;
+	.btn-arrow-outline {
+		border-color: $clr-white;
+		transition: all 0.5s ease-out;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.arrow-left {
+		background: url(/dist/assets/icons/arrow-left-white.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 1.6rem;
+	}
+
+	.arrow-right {
+		background: url(/dist/assets/icons/arrow-right-white-2.svg);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 1.6rem;
+	}
 }
 
 // left
@@ -134,26 +155,4 @@
 		line-height: 1.33;
 		font-weight: 400;
 	}
-}
-
-.btn-arrow-outline {
-	border-color: $clr-white;
-	transition: all 0.5s ease-out;
-	opacity: 0.8;
-	&:hover {
-		opacity: 1;
-	}
-}
-.arrow-left {
-	background: url(/dist/assets/icons/arrow-left-white.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 1.6rem;
-}
-
-.arrow-right {
-	background: url(/dist/assets/icons/arrow-right-white-2.svg);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 1.6rem;
 }

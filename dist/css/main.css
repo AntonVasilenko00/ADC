@@ -1207,6 +1207,30 @@ input:checked + .text-box {
   height: 54rem;
 }
 
+#about .btn-arrow-outline {
+  border-color: #fff;
+  transition: all 0.5s ease-out;
+  opacity: 0.8;
+}
+
+#about .btn-arrow-outline:hover {
+  opacity: 1;
+}
+
+#about .arrow-left {
+  background: url(/dist/assets/icons/arrow-left-white.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.6rem;
+}
+
+#about .arrow-right {
+  background: url(/dist/assets/icons/arrow-right-white-2.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.6rem;
+}
+
 .about-left .btn {
   text-transform: uppercase;
   position: relative;
@@ -1337,26 +1361,27 @@ input:checked + .text-box {
   font-weight: 400;
 }
 
-.btn-arrow-outline {
-  border-color: #fff;
-  transition: all 0.5s ease-out;
-  opacity: 0.8;
+#comments {
+  padding: 0 calc(50% - 42rem);
 }
 
-.btn-arrow-outline:hover {
-  opacity: 1;
+.reviews {
+  margin-top: 5.36rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.arrow-left {
-  background: url(/dist/assets/icons/arrow-left-white.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 1.6rem;
+.reviews h1 {
+  text-transform: uppercase;
+  font-size: 2.14rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
-.arrow-right {
-  background: url(/dist/assets/icons/arrow-right-white-2.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 1.6rem;
+.comment-links {
+  display: flex;
+}
+
+.thanks-letters {
+  display: flex;
 }
