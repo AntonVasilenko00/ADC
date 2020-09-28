@@ -1,8 +1,9 @@
 #comments {
-	@include container();
+	padding-bottom: 6.2rem;
 }
 
 .reviews {
+	@include container();
 	margin-top: 5.36rem;
 	display: flex;
 	justify-content: space-between;
@@ -13,12 +14,73 @@
 		font-weight: 700;
 		letter-spacing: 0.05em;
 	}
+	button {
+		text-transform: uppercase;
+		padding: 1.28rem 2.28rem;
+		font-weight: 700;
+		font-size: 1rem;
+	}
 }
 
 .comment-links {
+	@include container();
+	margin-top: 5.78rem;
 	display: flex;
+	a {
+		transition: all 0.3s ease-out;
+		&:first-child {
+			margin-left: 0;
+		}
+		margin-left: 3.93rem;
+		font-size: 1rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $clr-gray-4;
+		border-bottom: 1px solid $clr-gray-5;
+		&:hover {
+			color: $clr-blue;
+			border-color: inherit;
+		}
+	}
 }
 
 .thanks-letters {
+	@include container-left();
+	overflow-x: hidden;
+	margin-top: 3.42rem;
+	white-space: nowrap;
 	display: flex;
+}
+
+.thanks-letter {
+	&:first-child {
+		margin-left: 0;
+	}
+	margin-left: 2.14rem;
+	border-radius: 0.71rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background-color: $clr-gray-6;
+	width: 17.28rem;
+	height: 24rem;
+
+	.pepsi {
+		width: 6.43rem;
+		height: 2rem;
+	}
+
+	.letter {
+		width: 10.85rem;
+		height: 15.7rem;
+	}
+}
+
+.comments-buttons {
+	margin-top: 3.3rem;
+	@include container();
+	.arrow-right {
+		margin-left: 1.5rem;
+	}
 }
