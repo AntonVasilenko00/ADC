@@ -1631,3 +1631,34 @@ input:checked + .text-box {
 .exp-box-main a:hover {
   border-color: #528dc7;
 }
+
+#big-text {
+  padding: 0 calc(50% - 42rem);
+  padding-bottom: 3.43rem;
+}
+
+#big-text h2 {
+  margin-top: 4.21rem;
+  text-transform: uppercase;
+  font-size: 1.78rem;
+  font-weight: 700;
+}
+
+#big-text p {
+  margin-top: 1.64rem;
+  font-size: 1.43rem;
+  line-height: 1.5;
+  font-size: 400;
+}
+
+#big-text a {
+  display: inline-block;
+  margin-top: 1.64rem;
+  font-size: 1.28rem;
+  color: #528dc7;
+  transition: all 0.3s ease-out;
+}
+
+#big-text a:hover {
+  opacity: 0.7;
+}

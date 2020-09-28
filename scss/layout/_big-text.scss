@@ -1,0 +1,26 @@
+#big-text {
+	@include container();
+	padding-bottom: 3.43rem;
+	h2 {
+		margin-top: 4.21rem;
+		text-transform: uppercase;
+		font-size: 1.78rem;
+		font-weight: 700;
+	}
+	p {
+		margin-top: 1.64rem;
+		font-size: 1.43rem;
+		line-height: 1.5;
+		font-size: 400;
+	}
+	a {
+		display: inline-block;
+		margin-top: 1.64rem;
+		font-size: 1.28rem;
+		color: $clr-blue;
+		transition: all 0.3s ease-out;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
