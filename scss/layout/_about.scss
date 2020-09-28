@@ -1,0 +1,159 @@
+#about {
+	@include container();
+	display: flex;
+	background: url(/dist/assets/img/about-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $clr-white;
+	height: 54rem;
+}
+
+// left
+.about-left {
+	.btn {
+		text-transform: uppercase;
+		position: relative;
+		padding: 2.14rem 3.64rem;
+		margin-top: 3.14rem;
+		z-index: 3;
+	}
+}
+
+.short-text {
+	color: $clr-light-blue;
+	font-size: 1.57rem;
+	font-weight: medium;
+	margin-top: 6.35rem;
+}
+
+.about-title {
+	width: 22.57rem;
+	margin-top: 2.28rem;
+	text-transform: uppercase;
+	font-size: 2.14rem;
+	font-weight: bold;
+	line-height: 1.5;
+}
+
+.about-text {
+	text-align: left;
+	margin-top: 2.07rem;
+	font-size: 1.28rem;
+	width: 22.57rem;
+	height: 17.43rem;
+	line-height: 1.7;
+}
+
+// center
+.about-center {
+	position: relative;
+	display: flex;
+	img {
+		position: absolute;
+	}
+
+	.girl1 {
+		margin-top: 3.64rem;
+		width: 31rem;
+		height: 52rem;
+		bottom: 0%;
+		left: 6%;
+		z-index: 1;
+	}
+
+	.girl2 {
+		margin-top: 7.21rem;
+		width: 34rem;
+		height: 49rem;
+		bottom: 0%;
+		left: 36%;
+		z-index: 0;
+	}
+
+	.card-1 {
+		left: 12%;
+		top: 71%;
+	}
+
+	.card-2 {
+		left: 55%;
+		top: 66.5%;
+	}
+	.btn-arrow-outline {
+		margin-top: 15.71rem;
+		z-index: 2;
+		position: relative;
+	}
+	.arrow-left {
+		margin-left: 2.93rem;
+	}
+	.arrow-right {
+		margin-left: 28.8rem;
+	}
+}
+
+// right
+
+.about-right {
+	margin-top: 11.64rem;
+	margin-left: 4.48rem;
+}
+.about-item {
+	margin-top: 4.42rem;
+	&:first-child {
+		margin-top: 0;
+	}
+	display: flex;
+	.about-line {
+		margin-top: 1.5rem;
+		width: 1.5rem;
+		height: 0.14rem;
+		background: $clr-blue;
+	}
+	.about-main {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		margin-left: 2.21rem;
+	}
+	.about-num {
+		font-size: 2.5rem;
+		font-weight: 700;
+	}
+
+	.about-num-info {
+		margin-left: 0.5rem;
+		font-size: 1.28rem;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.about-item-info {
+		font-size: 1.28rem;
+		line-height: 1.33;
+		font-weight: 400;
+	}
+}
+
+.btn-arrow-outline {
+	border-color: $clr-white;
+	transition: all 0.5s ease-out;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}
+.arrow-left {
+	background: url(/dist/assets/icons/arrow-left-white.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.6rem;
+}
+
+.arrow-right {
+	background: url(/dist/assets/icons/arrow-right-white-2.svg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.6rem;
+}

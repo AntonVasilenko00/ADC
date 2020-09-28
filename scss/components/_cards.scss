@@ -1,0 +1,29 @@
+.person-card {
+	white-space: nowrap;
+	position: absolute;
+	z-index: 4;
+	margin: 5rem;
+	.person-card-name {
+		position: relative;
+		z-index: 4;
+		font-size: 1.28rem;
+		font-weight: 500;
+		color: $clr-black;
+		padding: 1.43rem 2rem;
+		background: $clr-white;
+		box-shadow: 0px 0.28rem 0.71rem rgba($clr-black, 0.1);
+		border-radius: 0.43rem;
+	}
+	.person-card-role {
+		transform: translateY(-10%);
+		margin-left: 10%;
+		font-size: 0.86rem;
+		font-weight: 400;
+		text-align: center;
+		width: 50%;
+		background: $clr-blue;
+		padding: 0.93rem 0.28rem;
+		box-shadow: 0px 0.28rem 0.71rem rgba($clr-black, 0.1);
+		border-radius: 0.43rem;
+	}
+}

@@ -177,9 +177,15 @@
 }
 
 .btn-outline {
+  transition: all 0.3s ease-out;
   background: transparent;
   border: 1px solid #528dc7;
   color: #528dc7;
+}
+
+.btn-outline:hover {
+  background: #528dc7;
+  color: #fff;
 }
 
 .split-btn {
@@ -225,6 +231,10 @@
   height: 4.28rem;
 }
 
+.btn-arrow-outline:hover {
+  opacity: 0.8;
+}
+
 .arrow-left {
   background: url(/dist/assets/icons/arrow-left.svg);
   background-position: center center;
@@ -237,6 +247,38 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 1.6rem;
+}
+
+.person-card {
+  white-space: nowrap;
+  position: absolute;
+  z-index: 4;
+  margin: 5rem;
+}
+
+.person-card .person-card-name {
+  position: relative;
+  z-index: 4;
+  font-size: 1.28rem;
+  font-weight: 500;
+  color: #000;
+  padding: 1.43rem 2rem;
+  background: #fff;
+  box-shadow: 0px 0.28rem 0.71rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.43rem;
+}
+
+.person-card .person-card-role {
+  transform: translateY(-10%);
+  margin-left: 10%;
+  font-size: 0.86rem;
+  font-weight: 400;
+  text-align: center;
+  width: 50%;
+  background: #528dc7;
+  padding: 0.93rem 0.28rem;
+  box-shadow: 0px 0.28rem 0.71rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.43rem;
 }
 
 #header {
@@ -543,6 +585,7 @@ a {
 }
 
 .intro-buttons .btn-outline:hover {
+  background: none;
   backdrop-filter: blur(5px);
 }
 
@@ -968,6 +1011,7 @@ input:checked + .text-box {
 }
 
 .next {
+  text-transform: uppercase;
   display: flex;
   align-items: center;
 }
@@ -1035,6 +1079,8 @@ input:checked + .text-box {
 #projects .btn {
   padding: 2.14rem 3.14rem;
   margin-top: 3.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .projects-title {
@@ -1148,4 +1194,169 @@ input:checked + .text-box {
   padding: 0.5rem 1.4rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.28rem;
+}
+
+#about {
+  padding: 0 calc(50% - 42rem);
+  display: flex;
+  background: url(/dist/assets/img/about-bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 54rem;
+}
+
+.about-left .btn {
+  text-transform: uppercase;
+  position: relative;
+  padding: 2.14rem 3.64rem;
+  margin-top: 3.14rem;
+  z-index: 3;
+}
+
+.short-text {
+  color: #60a9f1;
+  font-size: 1.57rem;
+  font-weight: medium;
+  margin-top: 6.35rem;
+}
+
+.about-title {
+  width: 22.57rem;
+  margin-top: 2.28rem;
+  text-transform: uppercase;
+  font-size: 2.14rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.about-text {
+  text-align: left;
+  margin-top: 2.07rem;
+  font-size: 1.28rem;
+  width: 22.57rem;
+  height: 17.43rem;
+  line-height: 1.7;
+}
+
+.about-center {
+  position: relative;
+  display: flex;
+}
+
+.about-center img {
+  position: absolute;
+}
+
+.about-center .girl1 {
+  margin-top: 3.64rem;
+  width: 31rem;
+  height: 52rem;
+  bottom: 0%;
+  left: 6%;
+  z-index: 1;
+}
+
+.about-center .girl2 {
+  margin-top: 7.21rem;
+  width: 34rem;
+  height: 49rem;
+  bottom: 0%;
+  left: 36%;
+  z-index: 0;
+}
+
+.about-center .card-1 {
+  left: 12%;
+  top: 71%;
+}
+
+.about-center .card-2 {
+  left: 55%;
+  top: 66.5%;
+}
+
+.about-center .btn-arrow-outline {
+  margin-top: 15.71rem;
+  z-index: 2;
+  position: relative;
+}
+
+.about-center .arrow-left {
+  margin-left: 2.93rem;
+}
+
+.about-center .arrow-right {
+  margin-left: 28.8rem;
+}
+
+.about-right {
+  margin-top: 11.64rem;
+  margin-left: 4.48rem;
+}
+
+.about-item {
+  margin-top: 4.42rem;
+  display: flex;
+}
+
+.about-item:first-child {
+  margin-top: 0;
+}
+
+.about-item .about-line {
+  margin-top: 1.5rem;
+  width: 1.5rem;
+  height: 0.14rem;
+  background: #528dc7;
+}
+
+.about-item .about-main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin-left: 2.21rem;
+}
+
+.about-item .about-num {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.about-item .about-num-info {
+  margin-left: 0.5rem;
+  font-size: 1.28rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-item .about-item-info {
+  font-size: 1.28rem;
+  line-height: 1.33;
+  font-weight: 400;
+}
+
+.btn-arrow-outline {
+  border-color: #fff;
+  transition: all 0.5s ease-out;
+  opacity: 0.8;
+}
+
+.btn-arrow-outline:hover {
+  opacity: 1;
+}
+
+.arrow-left {
+  background: url(/dist/assets/icons/arrow-left-white.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.6rem;
+}
+
+.arrow-right {
+  background: url(/dist/assets/icons/arrow-right-white-2.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 1.6rem;
 }

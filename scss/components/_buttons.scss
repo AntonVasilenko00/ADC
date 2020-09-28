@@ -16,6 +16,11 @@
 }
 
 .btn-outline {
+	&:hover {
+		background: $clr-blue;
+		color: $clr-white;
+	}
+	transition: all 0.3s ease-out;
 	background: transparent;
 	border: 1px solid $clr-blue;
 	color: $clr-blue;
@@ -63,6 +68,9 @@
 	@include border-radius();
 	width: 4.28rem;
 	height: 4.28rem;
+	&:hover {
+		opacity: 0.8;
+	}
 }
 
 .arrow-left {
