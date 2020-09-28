@@ -1454,3 +1454,83 @@ input:checked + .text-box {
 .comments-buttons .arrow-right {
   margin-left: 1.5rem;
 }
+
+#describe-task {
+  position: relative;
+  padding: 0 calc(50% - 42rem);
+  padding-top: 6.64rem;
+  padding-bottom: 6.43rem;
+  background: #f6faff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.describe-title {
+  text-transform: uppercase;
+  font-size: 2.14rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  width: 42rem;
+  line-height: 1.5;
+}
+
+.describe-items {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.63rem;
+}
+
+.describe-item {
+  margin-top: 2.28rem;
+  flex: 0 50%;
+  display: flex;
+  align-items: center;
+}
+
+.describe-item img {
+  width: 1.78rem;
+  height: 1.78rem;
+}
+
+.describe-item p {
+  min-width: 14.28rem;
+  margin-left: 1.86rem;
+  font-size: 1.21rem;
+  line-height: 1.47;
+  font-weight: 400;
+}
+
+.describe-button-section {
+  display: flex;
+  margin-top: 5rem;
+}
+
+.describe-button-section button {
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1.43rem 2.93rem;
+}
+
+.describe-button-section .button-info {
+  margin-left: 2rem;
+  width: 18.14rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 0.5;
+}
+
+.describe-girl .person-card {
+  position: absolute;
+  top: 57%;
+  left: 61%;
+}
+
+.describe-girl .girl {
+  position: absolute;
+  width: 31.9rem;
+  height: 47rem;
+  left: 60%;
+  bottom: 0;
+}
