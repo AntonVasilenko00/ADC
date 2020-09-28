@@ -269,6 +269,7 @@
 }
 
 .person-card .person-card-role {
+  color: #fff;
   transform: translateY(-10%);
   margin-left: 10%;
   font-size: 0.86rem;
