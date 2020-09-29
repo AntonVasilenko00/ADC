@@ -1763,3 +1763,7 @@ input:checked + .text-box {
   padding: 0 calc(50% - 42rem);
   color: white;
 }
+
+.footer-top {
+  display: flex;
+}
