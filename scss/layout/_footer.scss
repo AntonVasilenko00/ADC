@@ -1,0 +1,13 @@
+#footer {
+	background: url(/dist/assets/img/footer-bg.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 52.8rem;
+	@include container();
+	color: rgba($clr-white, 1);
+}
+
+.footer-top {
+}
