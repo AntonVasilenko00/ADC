@@ -23,3 +23,13 @@ document.getElementById("header-phone-card").addEventListener("mouseleave", () =
 	document.getElementById("phone-toggle-info").classList.remove("hide");
 	document.getElementById("phone-toggle").classList.remove("hide");
 });
+
+const btnRight = document.getElementById("split-right");
+const splitDrop = document.getElementById("split-drop");
+
+splitDrop.addEventListener("mouseover", () => {
+	btnRight.classList.add("active-right");
+});
+splitDrop.addEventListener("mouseout", () => {
+	btnRight.classList.remove("active-right");
+});

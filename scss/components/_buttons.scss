@@ -38,6 +38,26 @@
 	}
 }
 
+.split-wrapper {
+	transition: all 0.3s ease-out;
+
+	&:hover {
+		.dropdown-content {
+			display: block;
+			visibility: visible;
+			opacity: 1;
+		}
+		visibility: visible;
+	}
+
+	visibility: hidden;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	padding-top: 0.5rem;
+}
 .btn-split-left {
 	padding: 1.14rem;
 	color: $clr-white;
@@ -45,6 +65,7 @@
 	@include split-left-border;
 }
 .btn-split-right {
+	transition: all 0.3s ease-out;
 	position: relative;
 	padding: 1.14rem;
 	color: $clr-white;
@@ -59,10 +80,54 @@
 		width: 1px;
 		background: $clr-split-btn-divider;
 	}
+	&:hover {
+		&::before {
+			display: none;
+		}
+		background: $clr-white;
+		color: $clr-black;
+	}
+	&:hover ~ .split-wrapper {
+		visibility: visible;
+		.dropdown-content {
+			display: block;
+			visibility: visible;
+			opacity: 1;
+		}
+	}
 }
 
+.active-right {
+	&::before {
+		opacity: 0;
+	}
+	background: $clr-white;
+	color: $clr-black;
+}
 .dropdown-content {
-	display: none;
+	transition: all 0.3s ease-out;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 14.65rem;
+	li {
+		margin-top: 1.5rem;
+		&:first-child {
+			margin-top: 0.5rem;
+		}
+	}
+	a {
+		transition: all 0.3s ease-out;
+		&:hover {
+			color: $clr-blue;
+		}
+	}
+	padding: 1rem 1.78rem;
+	border-radius: 0.21rem;
+	position: relative;
+	background: $clr-white;
+	color: $clr-black;
 	visibility: hidden;
 	opacity: 0;
 }
