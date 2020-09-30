@@ -26,10 +26,13 @@ document.getElementById("header-phone-card").addEventListener("mouseleave", () =
 
 const btnRight = document.getElementById("split-right");
 const splitDrop = document.getElementById("split-drop");
+const arrowDown = document.getElementById("split-down");
 
 splitDrop.addEventListener("mouseover", () => {
 	btnRight.classList.add("active-right");
+	arrowDown.classList.add("arrow-down");
 });
 splitDrop.addEventListener("mouseout", () => {
+	arrowDown.classList.remove("arrow-down");
 	btnRight.classList.remove("active-right");
 });

@@ -256,9 +256,21 @@
   background: #616d79;
 }
 
+.btn-split-right i {
+  transition: transform 0.2s ease-out;
+}
+
+.btn-split-right .arrow-down {
+  transform: rotate(180deg);
+}
+
 .btn-split-right:hover {
   background: #fff;
   color: #000;
+}
+
+.btn-split-right:hover i {
+  transform: rotate(180deg);
 }
 
 .btn-split-right:hover::before {

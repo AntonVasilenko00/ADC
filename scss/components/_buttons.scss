@@ -80,7 +80,16 @@
 		width: 1px;
 		background: $clr-split-btn-divider;
 	}
+	i {
+		transition: transform 0.2s ease-out;
+	}
+	.arrow-down {
+		transform: rotate(180deg);
+	}
 	&:hover {
+		i {
+			transform: rotate(180deg);
+		}
 		&::before {
 			display: none;
 		}
