@@ -12,4 +12,14 @@ function otherServicesToggle() {
 	document.getElementById("last-divider").classList.toggle("hide");
 }
 
-function togglePhone() {}
+function togglePhone() {
+	document.getElementById("header-phone-card").classList.add("active");
+	document.getElementById("phone-toggle-info").classList.add("hide");
+	document.getElementById("phone-toggle").classList.add("hide");
+}
+
+document.getElementById("header-phone-card").addEventListener("mouseleave", () => {
+	document.getElementById("header-phone-card").classList.remove("active");
+	document.getElementById("phone-toggle-info").classList.remove("hide");
+	document.getElementById("phone-toggle").classList.remove("hide");
+});

@@ -56,63 +56,62 @@
 			</div>
 
 			<!-- Dropdown phone -->
-			<div class="active-phone">
-				<p class="phone-info">Сотовый оператор: A1</p>
-				<div class="phone-wrapper" id="phone-toggle" onclick="togglePhone">
+			<div class="active-phone toggle-phone">
+				<p class="phone-info" id="phone-toggle-info">Сотовый оператор: A1</p>
+				<div class="phone-wrapper" id="phone-toggle" onclick="togglePhone()">
 					<a href="#" class="phone-number">+375 29 662 28 58</a
 					><img src="/dist/assets/icons/caret-down.svg" alt="" class="angle-down" />
 				</div>
-			<!-- Dropdown content -->
-			<div class="phone-card">
-				<div class="active-phone">
-					<div class="phone-wrapper">
-						<ul class="phone-links">
-							<li class="phone-link">
-								<p class="phone-info">velcom</p>
-								<a href="tel:+375296622858" class="phone-number">+375 29 662 28 58</a><i class="fa fa-angle-down"></i>
-							</li>
-							<li class="phone-link">
-								<p class="phone-info">mts</p>
-								<a href="tel:+375296622858" class="phone-number">+375 29 662 28 58</a>
-							</li>
-							<li class="phone-link">
-								<p class="phone-info">Городской</p>
-								<a href="tel:+375172924059" class="phone-number">+375 17 292 40 59</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<!-- Messangers -->
-				<p class="main-subtitle">Написать:</p>
-				<ul class="msg-links">
-					<li class="msg-link"><img src="dist/assets/icons/viber.svg" /><a href="#">Viber</a></li>
-					<li class="msg-link"><img src="dist/assets/icons/whatsup.svg" /><a href="#">WhatsApp</a></li>
-					<li class="msg-link"><img src="dist/assets/icons/telegram.svg" /><a href="#">Telegram</a></li>
-					<li class="msg-link"><img src="dist/assets/icons/mail.png" /><a href="#">info@ads24.by</a></li>
-				</ul>
-				<!-- Adress -->
-				<div class="adress">
-					<p class="main-subtitle">Адрес:</p>
-					<!-- Adress info -->
-					<div class="adress-info">
-						<img src="/dist/assets/icons/gps.svg" />
-						<div class="adress-text">
-							<p class="street">ул. Олешева 5</p>
-							<p class="work-info">Работаем <strong>с 09:00 - 19:00 </strong>, выходные сб-вс</p>
+				<!-- Dropdown content -->
+				<div class="phone-card active" id="header-phone-card">
+					<div class="active-phone">
+						<div class="phone-wrapper">
+							<ul class="phone-links">
+								<li class="phone-link">
+									<p class="phone-info">velcom</p>
+									<a href="tel:+375296622858" class="phone-number">+375 29 662 28 58</a><i class="fa fa-angle-down"></i>
+								</li>
+								<li class="phone-link">
+									<p class="phone-info">mts</p>
+									<a href="tel:+375296622858" class="phone-number">+375 29 662 28 58</a>
+								</li>
+								<li class="phone-link">
+									<p class="phone-info">Городской</p>
+									<a href="tel:+375172924059" class="phone-number">+375 17 292 40 59</a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<!-- Work in Belarus -->
-					<div class="belarus-work">
-						<img src="dist/assets/icons/belarus.svg" />
-						<p class="belarus-info">Работаем по всей РБ</p>
+					<div class="phone-card-divider"></div>
+					<!-- Messangers -->
+					<p class="main-subtitle">Написать:</p>
+					<ul class="msg-links">
+						<li class="msg-link"><img src="dist/assets/icons/viber.svg" /><a href="#">Viber</a></li>
+						<li class="msg-link"><img src="dist/assets/icons/whatsup.svg" /><a href="#">WhatsApp</a></li>
+						<li class="msg-link"><img src="dist/assets/icons/telegram.svg" /><a href="#">Telegram</a></li>
+						<li class="msg-link"><img src="dist/assets/icons/mail.png" /><a href="#">info@ads24.by</a></li>
+					</ul>
+					<div class="phone-card-divider"></div>
+					<!-- Adress -->
+					<div class="adress">
+						<p class="main-subtitle">Адрес:</p>
+						<!-- Adress info -->
+						<div class="adress-info">
+							<img src="/dist/assets/icons/gps.svg" />
+							<div class="adress-text">
+								<p class="street">ул. Олешева 5</p>
+								<p class="work-info">Работаем <strong>с 09:00 - 19:00 </strong>, выходные сб-вс</p>
+							</div>
+						</div>
+						<!-- Work in Belarus -->
+						<div class="belarus-work">
+							<img src="dist/assets/icons/belarus.svg" />
+							<p class="belarus-info">Работаем по всей РБ</p>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-
-				<!-- End of Dropdown content -->
-			</div>
+			<!-- End of Dropdown content -->
 			<!-- Calculate Project -->
 			<div class="project-calculation">
 				<!-- Split Dropdown Button -->

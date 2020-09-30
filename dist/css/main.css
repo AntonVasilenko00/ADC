@@ -343,12 +343,13 @@
 }
 
 .phone-card .adress-info {
+  margin-top: 0.7rem;
   padding-left: 1.78rem;
   display: flex;
-  align-items: center;
 }
 
 .phone-card .adress-info img {
+  margin-top: 0.5rem;
   width: 1rem;
   height: 1.28rem;
 }
@@ -356,10 +357,6 @@
 .phone-card .adress-info .adress-text {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
-}
-
-.phone-card .street {
-  margin-top: 0.7rem;
 }
 
 .phone-card .work-info {
@@ -558,7 +555,7 @@
   visibility: visible;
 }
 
-.header-contact {
+.toggle-phone {
   margin-left: 3.92rem;
 }
 
@@ -581,26 +578,37 @@
   font-weight: 600;
 }
 
+#phone-toggle-info,
+#phone-toggle {
+  transition: all 0.3s ease-out;
+}
+
+#header .hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 #header .phone-card {
+  transition: all 0.5s ease-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-2rem, -5rem);
   position: absolute;
   color: #000;
   border-radius: 0.22rem;
   background: #fff;
   width: 18.36rem;
   height: 32.28rem;
-  padding: 1.28rem 0 1.28rem 1.78rem;
+  padding: 1.28rem 0 1.28rem 0;
+}
+
+#header .phone-card .phone-card-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 #header .phone-card .phone-links {
   display: block;
-}
-
-#header .phone-card .phone-link {
-  margin-top: 0.5rem;
-}
-
-#header .phone-card .phone-link:first-child {
-  margin: 0;
 }
 
 #header .phone-card .phone-info,
@@ -608,71 +616,36 @@
   color: #000;
 }
 
-#header .phone-card .phone-wrapper {
-  width: 100%;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-#header .phone-card .main-subtitle {
-  margin-top: 1rem;
-}
-
 #header .phone-card .msg-links {
-  padding-bottom: 1.28rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 1rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.71rem;
+  width: 90%;
+  gap: 1rem;
 }
 
 #header .phone-card .msg-link {
-  border-radius: 7.14rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0.71rem 1rem;
-  display: flex;
+  border: none;
+  padding: 0;
+  font-size: 0.88rem;
 }
 
 #header .phone-card .msg-link a {
-  margin-left: 0.43rem;
+  margin-left: 0.36rem;
 }
 
 #header .phone-card .msg-link img {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-
-#header .phone-card .adress-info {
-  display: flex;
-  align-items: center;
-}
-
-#header .phone-card .adress-info img {
-  width: 1rem;
-  height: 1.28rem;
-}
-
-#header .phone-card .adress-info .adress-text {
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
-}
-
-#header .phone-card .street {
-  margin-top: 0.7rem;
+  width: 0.86rem;
+  height: 0.86rem;
 }
 
 #header .phone-card .work-info {
-  margin-top: 0.5rem;
-  font-size: 0.86rem;
+  color: rgba(0, 0, 0, 0.5);
+  width: 71%;
+  white-space: normal;
 }
 
 #header .phone-card .belarus-work {
-  width: 61%;
-  border-radius: 7.14rem;
-  background: #1a1a22;
-  padding: 0.71rem 1rem;
-  margin-top: 1.28rem;
-  display: flex;
+  width: 75%;
+  margin-top: 0.5rem;
+  background: #fafafa;
 }
 
 #header .phone-card .belarus-work .belarus-info {
@@ -683,21 +656,26 @@
   border-radius: 50%;
 }
 
-.split-btn {
+#header .active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .split-btn {
   margin-left: 3.92rem;
 }
 
-.angle-down {
+#header .angle-down {
   width: 0.9rem;
   height: auto;
   margin-left: 0.36rem;
 }
 
-.submenu {
+#header .submenu {
   display: none;
 }
 
-.dropdown-content {
+#header .dropdown-content {
   display: none;
 }
 

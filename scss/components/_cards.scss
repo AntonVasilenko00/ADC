@@ -84,21 +84,20 @@
 	}
 
 	.adress-info {
+		margin-top: 0.7rem;
 		padding-left: 1.78rem;
 
 		img {
+			margin-top: 0.5rem;
 			width: 1rem;
 			height: 1.28rem;
 		}
 		display: flex;
-		align-items: center;
+		// align-items: center;
 		.adress-text {
 			margin-top: 0.5rem;
 			margin-left: 0.5rem;
 		}
-	}
-	.street {
-		margin-top: 0.7rem;
 	}
 	.work-info {
 		margin-top: 0.5rem;
