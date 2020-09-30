@@ -28,6 +28,7 @@
 
 //split btn
 .split-btn {
+	position: relative;
 	white-space: nowrap;
 	display: flex;
 	align-items: center;
@@ -44,21 +45,26 @@
 	@include split-left-border;
 }
 .btn-split-right {
+	position: relative;
 	padding: 1.14rem;
 	color: $clr-white;
 	display: inline-block;
 	@include split-right-border;
+	&::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 10%;
+		height: 80%;
+		width: 1px;
+		background: $clr-split-btn-divider;
+	}
 }
 
-.btn-split-divider {
-}
-
-.dropdown {
-	// &:hover {
-	// 	.dropdown-content {
-	// 		display: block;
-	// 	}
-	// }
+.dropdown-content {
+	display: none;
+	visibility: hidden;
+	opacity: 0;
 }
 
 .btn-arrow-outline {

@@ -19,6 +19,7 @@
 	border-top: 1px solid rgba($clr-split-btn-border, 0.3);
 	border-bottom: 1px solid rgba($clr-split-btn-border, 0.3);
 	border-right: 1px solid rgba($clr-split-btn-border, 0.3);
+
 	@if ($useRoundedCorners) {
 		border-radius: 0 $btn-rounded $btn-rounded 0;
 	} @else {

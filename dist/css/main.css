@@ -189,6 +189,7 @@
 }
 
 .split-btn {
+  position: relative;
   white-space: nowrap;
   display: flex;
   align-items: center;
@@ -211,6 +212,7 @@
 }
 
 .btn-split-right {
+  position: relative;
   padding: 1.14rem;
   color: #fff;
   display: inline-block;
@@ -220,6 +222,22 @@
   border-bottom: 1px solid rgba(196, 196, 196, 0.3);
   border-right: 1px solid rgba(196, 196, 196, 0.3);
   border-radius: 0 100px 100px 0;
+}
+
+.btn-split-right::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: #616d79;
+}
+
+.dropdown-content {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .btn-arrow-outline {
@@ -573,6 +591,10 @@
   align-items: center;
 }
 
+.phone-wrapper img {
+  cursor: pointer;
+}
+
 .phone-number {
   font-size: 1.7rem;
   font-weight: 600;
@@ -672,10 +694,6 @@
 }
 
 #header .submenu {
-  display: none;
-}
-
-#header .dropdown-content {
   display: none;
 }
 
