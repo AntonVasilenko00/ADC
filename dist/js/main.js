@@ -11,3 +11,5 @@ function otherServicesToggle() {
 	p.innerHTML == "+" ? (p.innerHTML = "-") : (p.innerHTML = "+");
 	document.getElementById("last-divider").classList.toggle("hide");
 }
+
+function togglePhone() {}

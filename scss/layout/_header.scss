@@ -190,6 +190,96 @@
 	font-size: 1.7rem;
 	font-weight: 600;
 }
+// phone-card
+#header {
+	.phone-card {
+		position: absolute;
+		color: $clr-black;
+		border-radius: 0.22rem;
+		background: $clr-white;
+		width: 18.36rem;
+		height: 32.28rem;
+		padding: 1.28rem 0 1.28rem 1.78rem;
+		.phone-links {
+			display: block;
+		}
+		.phone-link {
+			margin-top: 0.5rem;
+			&:first-child {
+				margin: 0;
+			}
+		}
+		.phone-info,
+		.phone-number {
+			color: $clr-black;
+		}
+		.phone-wrapper {
+			width: 100%;
+			border-bottom: 1px solid rgba($clr-black, 0.1);
+		}
+		.main-subtitle {
+			margin-top: 1rem;
+		}
+		.msg-links {
+			padding-bottom: 1.28rem;
+			border-bottom: 1px solid rgba($clr-white, 0.1);
+			margin-top: 1rem;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.71rem;
+		}
+
+		.msg-link {
+			border-radius: 7.14rem;
+			border: 1px solid rgba($clr-white, 0.1);
+			padding: 0.71rem 1rem;
+			display: flex;
+			a {
+				margin-left: 0.43rem;
+			}
+			img {
+				width: 1.1rem;
+				height: 1.1rem;
+			}
+		}
+
+		.adress-info {
+			img {
+				width: 1rem;
+				height: 1.28rem;
+			}
+			display: flex;
+			align-items: center;
+			.adress-text {
+				margin-top: 0.5rem;
+				margin-left: 0.5rem;
+			}
+		}
+		.street {
+			margin-top: 0.7rem;
+		}
+		.work-info {
+			margin-top: 0.5rem;
+			font-size: 0.86rem;
+		}
+
+		.belarus-work {
+			width: 61%;
+			border-radius: 7.14rem;
+			background: $clr-dark;
+			padding: 0.71rem 1rem;
+			margin-top: 1.28rem;
+			display: flex;
+			.belarus-info {
+				margin-left: 0.5rem;
+			}
+			img {
+				border-radius: 50%;
+			}
+		}
+	}
+}
+// end of phone-card
 
 .split-btn {
 	margin-left: 3.92rem;
