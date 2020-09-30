@@ -1,7 +1,7 @@
 #intro {
 	width: 100%;
 	height: 68.5rem;
-	background: url([ADC]/dist/assets/img/intro-bg.jpg);
+	background: url(#{$github}/dist/assets/img/intro-bg.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,7 +89,7 @@
 	top: 45rem;
 	width: 20rem;
 	height: 14.4rem;
-	background: url(/dist/assets/img/preview.png);
+	background: url(#{$github}/dist/assets/img/preview.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;

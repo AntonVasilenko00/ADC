@@ -45,7 +45,7 @@
 
 .project-info {
 	padding: 2.28rem;
-	background: url(/dist/assets/img/projects-photo/info-projects.png);
+	background: url(#{$github}/dist/assets/img/projects-photo/info-projects.png);
 	color: $clr-white;
 
 	h2 {
