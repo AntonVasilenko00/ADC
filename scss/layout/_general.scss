@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -24,6 +25,10 @@ button {
 	background: none;
 	font-family: inherit;
 	font-size: inherit;
+	font-weight: normal;
+}
+input {
+	font-family: "Gilroy", sans-serif;
 	font-weight: normal;
 }
 li {
