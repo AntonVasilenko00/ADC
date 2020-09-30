@@ -1920,10 +1920,10 @@ input:checked + .text-box {
 }
 
 .footer-middle .other-services {
+  transition: opacity 0.3s ease-out;
   height: 0;
   position: absolute;
   opacity: 0;
-  display: none;
 }
 
 .footer-middle .other-services li {

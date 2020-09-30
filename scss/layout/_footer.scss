@@ -148,10 +148,11 @@
 		display: flex;
 	}
 	.other-services {
+		transition: opacity 0.3s ease-out;
 		height: 0;
 		position: absolute;
 		opacity: 0;
-		display: none;
+		// display: none;
 		li {
 			margin-top: 0.5rem;
 		}
