@@ -1,7 +1,7 @@
 #about {
 	@include container();
 	display: flex;
-	background: url(/dist/assets/img/about-bg.png);
+	background: url(dist/assets/img/about-bg.png);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -16,14 +16,14 @@
 		}
 	}
 	.arrow-left {
-		background: url(/dist/assets/icons/arrow-left-white.svg);
+		background: url(dist/assets/icons/arrow-left-white.svg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: 1.6rem;
 	}
 
 	.arrow-right {
-		background: url(/dist/assets/icons/arrow-right-white-2.svg);
+		background: url(dist/assets/icons/arrow-right-white-2.svg);
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: 1.6rem;
