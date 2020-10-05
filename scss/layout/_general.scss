@@ -8,8 +8,9 @@
 }
 
 html {
-	// font-size: 14px;
+	// font-size: calc(12px + 0.25vw);
 	font-size: 0.71vw; // ~ 14px with 1920px width screen
+	// font-size: 10px;
 }
 body {
 	height: 100%;
