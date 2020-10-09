@@ -36,3 +36,11 @@ splitDrop.addEventListener("mouseout", () => {
 	arrowDown.classList.remove("arrow-down");
 	btnRight.classList.remove("active-right");
 });
+
+// Burger
+const burger = document.querySelector(".burger");
+const header = document.querySelector("#header");
+burger.addEventListener("click", () => {
+	burger.classList.toggle("burger-active");
+	header.classList.toggle("header-active");
+});
