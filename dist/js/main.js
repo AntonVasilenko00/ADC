@@ -1,10 +1,11 @@
+// search
 function toggleSearchDropdown() {
 	document.getElementById("searchDrop").classList.toggle("show");
 
 	document.getElementById("search-field").focus();
 	document.getElementById("search-field").select();
 }
-
+// services
 function otherServicesToggle() {
 	document.getElementById("other-services-dropdown-content").classList.toggle("active");
 	const p = document.getElementById("last-plus");
@@ -12,6 +13,7 @@ function otherServicesToggle() {
 	document.getElementById("last-divider").classList.toggle("hide");
 }
 
+// Phone card
 function togglePhone() {
 	document.getElementById("header-phone-card").classList.add("active");
 	document.getElementById("phone-toggle-info").classList.add("hide");
@@ -23,7 +25,7 @@ document.getElementById("header-phone-card").addEventListener("mouseleave", () =
 	document.getElementById("phone-toggle-info").classList.remove("hide");
 	document.getElementById("phone-toggle").classList.remove("hide");
 });
-
+// split btn
 const btnRight = document.getElementById("split-right");
 const splitDrop = document.getElementById("split-drop");
 const arrowDown = document.getElementById("split-down");

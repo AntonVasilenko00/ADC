@@ -167,3 +167,70 @@
 		height: 3.57rem;
 	}
 }
+
+@media (max-width: 767.98px) {
+	#intro {
+		height: 100vh;
+	}
+	.video {
+		display: none;
+	}
+	.cards {
+		height: 65vh;
+		position: static;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.card {
+		padding: 15px;
+		border-radius: 10px;
+		font-size: 12px;
+		width: 100%;
+		height: 90px;
+		img {
+			width: 10%;
+			max-width: 30px;
+		}
+	}
+	.intro-title {
+		padding-top: 9vh;
+		width: 100%;
+		font-size: 16px;
+	}
+	.intro-text {
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.intro-buttons {
+		display: flex;
+		justify-content: space-between;
+		.btn {
+			padding: 10px 20px;
+			font-size: 12px;
+		}
+	}
+
+	.brandings {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 10vh;
+		// margin-top: 5vh;
+		p {
+			font-size: 12px;
+		}
+	}
+
+	.brands {
+		box-sizing: border-box;
+		img {
+			&:first-child {
+				margin-left: 0;
+			}
+			display: inline-block;
+			transform: scale(2);
+			margin-left: 15rem;
+		}
+	}
+}

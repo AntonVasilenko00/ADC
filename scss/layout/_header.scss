@@ -486,6 +486,7 @@
 }
 
 .burger-header {
+	box-sizing: 5px 5px 5px $clr-black;
 	display: none;
 	right: 5%;
 	top: 4rem;
@@ -520,56 +521,100 @@
 	.logo-header-mobile {
 		display: flex;
 		position: absolute;
-		left: 0;
+		left: 5%;
 		top: 5rem;
+		.logo-info {
+			display: flex;
+			align-items: center;
+		}
 		.logo {
-			width: 15rem;
+			width: 50px;
 		}
 
 		.logo-text {
 			color: $clr-white;
 			margin-left: 20px;
 			line-height: 1;
-			font-size: 4rem;
-			width: 45rem;
+			font-size: 12px;
+			width: 140px;
 			display: block;
 		}
 	}
 	#header {
-		z-index: 3;
+		padding: 0;
+		z-index: 5;
 		transition: all 0.4s ease-in;
 		transform: translateX(100%);
 		opacity: 0;
 		visibility: hidden;
-		.nav-links {
-			li {
-				font-size: 16px;
-				margin-top: 15rem;
-			}
-		}
-		background: rgba($clr-dark, 0.8);
+		background: rgba($clr-dark, 0.9);
 		right: 0;
-		// top: 10rem;
 		width: 50%;
 		// height: 100vh;
 		position: fixed !important;
 		align-items: center;
 		flex-direction: column;
-		// display: none;
-	}
-	.nav-links {
-		flex-direction: column;
+		#header-nav {
+			text-align: center;
+			width: 100%;
+		}
+		.nav-links {
+			width: 100%;
+			flex-direction: column;
+			li {
+				padding-bottom: 3rem;
+				margin-left: 0;
+				display: inline-block;
+				width: 100%;
+				&:first-child {
+					margin-top: 7.5rem;
+				}
+				border-bottom: 1px solid rgba($clr-white, 0.1);
+				font-size: 16px;
+				margin-top: 7rem;
+			}
+		}
+		.angle-down {
+			width: 4rem;
+		}
+		.active-phone {
+			margin-top: 7rem;
+		}
+		.phone-info {
+			display: none;
+			font-size: 9px;
+		}
+		.phone-number {
+			font-size: 16px;
+		}
 	}
 
+	.project-calculation {
+		margin-top: 2rem;
+	}
+	.split-btn {
+		.btn-split-left {
+			border: none;
+			font-size: 12px;
+		}
+		.btn-split-right {
+			border: none;
+			font-size: 12px;
+		}
+	}
 	#header.header-active {
 		transform: translateX(0);
 		opacity: 1;
 		visibility: visible;
 	}
 	.burger-header {
-		z-index: 5;
-		right: 5%;
+		z-index: 7;
+		right: 3%;
 		position: fixed;
 		display: block;
+	}
+	.search-btn {
+		margin-top: 3rem;
+		width: 5rem;
 	}
 }

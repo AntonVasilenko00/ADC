@@ -172,9 +172,11 @@
 .burger {
 	cursor: pointer;
 	position: absolute;
+	// box-shadow: 1px 1px 1px rgba($clr-black, 0.4);
 }
 .burger-active {
 	.burger__line {
+		// display: block;
 		&:nth-child(1) {
 			transform: rotate(45deg) translate(25%, 180%);
 		}
@@ -183,15 +185,20 @@
 		}
 		&:nth-child(3) {
 			transition: all 0.2s linear;
+			// opacity: 0;
 			width: 0;
 		}
 	}
 }
 .burger__line {
+	box-shadow: 1px 1px 10px rgba($clr-black, 0.4);
 	transition: all 0.4s linear;
 	&:first-child {
 		margin: 0;
 	}
+	// &:nth-child(3) {
+	// 	opacity: 1;
+	// }
 	margin-top: 5px;
 	width: 25px;
 	height: 3px;
