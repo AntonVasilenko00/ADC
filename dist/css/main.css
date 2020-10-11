@@ -1430,13 +1430,15 @@ a {
     position: static;
     flex-direction: column;
     justify-content: space-between;
+    padding-bottom: 20px;
   }
   .card {
+    margin-top: 10px;
     padding: 15px;
     border-radius: 10px;
     font-size: 12px;
     width: 100%;
-    height: 90px;
+    height: 20%;
   }
   .card img {
     width: 10%;
@@ -1463,9 +1465,12 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 10vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .brandings p {
+    white-space: normal;
+    width: 80%;
     font-size: 12px;
   }
   .brands {
@@ -1536,6 +1541,7 @@ a {
 }
 
 #services-scroll-nav {
+  position: relative;
   white-space: nowrap;
   width: 71.8rem;
   padding: 0.5rem;
@@ -1545,9 +1551,11 @@ a {
 }
 
 #services-scroll-nav img {
-  transform: rotate(-90deg) translate(-1.5rem, -32.5rem);
+  transform: rotate(-90deg);
   border-radius: 100%;
   position: absolute;
+  right: 0;
+  top: 40%;
   width: 1.78rem;
   height: 1.78rem;
   background: #528dc7;
@@ -1636,6 +1644,31 @@ a {
   font-size: 1.07rem;
   line-height: 1.3;
   color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 767.98px) {
+  .services-title {
+    font-size: 16px;
+    width: 80%;
+  }
+  .services-info {
+    font-size: 12px;
+    width: 80%;
+  }
+  #services-scroll-nav {
+    width: 80%;
+  }
+  #services-scroll-nav a {
+    font-size: 12px;
+  }
+  #services-scroll-nav .btn {
+    line-height: unset;
+    padding: 7px;
+  }
+  #services-scroll-nav img {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 #services-choice {

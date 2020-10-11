@@ -40,6 +40,7 @@
 }
 
 #services-scroll-nav {
+	position: relative;
 	white-space: nowrap;
 	width: 71.8rem;
 	padding: 0.5rem;
@@ -48,9 +49,11 @@
 	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
 	@include sroll-box-border-radius();
 	img {
-		transform: rotate(-90deg) translate(-1.5rem, -32.5rem);
+		transform: rotate(-90deg);
 		border-radius: 100%;
 		position: absolute;
+		right: 0;
+		top: 40%;
 		width: 1.78rem;
 		height: 1.78rem;
 		background: $clr-blue;
@@ -138,4 +141,30 @@
 	font-size: 1.07rem;
 	line-height: 1.3;
 	color: rgba($clr-black, 0.5);
+}
+
+// media
+@media (max-width: 767.98px) {
+	.services-title {
+		font-size: 16px;
+		width: 80%;
+	}
+	.services-info {
+		font-size: 12px;
+		width: 80%;
+	}
+	#services-scroll-nav {
+		width: 80%;
+		a {
+			font-size: 12px;
+		}
+		.btn {
+			line-height: unset;
+			padding: 7px;
+		}
+		img {
+			width: 10px;
+			height: 10px;
+		}
+	}
 }
