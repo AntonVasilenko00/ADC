@@ -178,4 +178,32 @@
 			height: 10px;
 		}
 	}
+	.services-box {
+		padding-bottom: 10rem;
+		img {
+			width: 70rem;
+		}
+		overflow-x: hidden;
+		height: unset;
+	}
+	.services-block-title {
+		white-space: nowrap;
+		font-size: 18px;
+	}
+	.services-link {
+		font-size: 12px;
+	}
+
+	.btn-and-text {
+		position: relative;
+		button {
+			font-size: 12px;
+		}
+		.services-box-info {
+			top: -20%;
+			right: 0%;
+			position: absolute;
+			font-size: 9px;
+		}
+	}
 }

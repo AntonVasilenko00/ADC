@@ -1430,6 +1430,7 @@ a {
     display: none;
   }
   .cards {
+    margin-top: 10px;
     position: static;
     flex-direction: column;
     padding-bottom: 20px;
@@ -1446,12 +1447,12 @@ a {
     max-width: 30px;
   }
   .intro-title {
-    padding-top: 9vh;
+    padding-top: 60px;
     width: 100%;
     font-size: 16px;
   }
   .intro-text {
-    margin-top: 3vh;
+    margin-top: 10px;
     width: 100%;
     font-size: 12px;
   }
@@ -1682,6 +1683,33 @@ a {
   #services-scroll-nav img {
     width: 10px;
     height: 10px;
+  }
+  .services-box {
+    padding-bottom: 10rem;
+    overflow-x: hidden;
+    height: unset;
+  }
+  .services-box img {
+    width: 70rem;
+  }
+  .services-block-title {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  .services-link {
+    font-size: 12px;
+  }
+  .btn-and-text {
+    position: relative;
+  }
+  .btn-and-text button {
+    font-size: 12px;
+  }
+  .btn-and-text .services-box-info {
+    top: -20%;
+    right: 0%;
+    position: absolute;
+    font-size: 9px;
   }
 }
 
