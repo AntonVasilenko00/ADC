@@ -1424,12 +1424,13 @@ a {
 
 @media (max-width: 767.98px) {
   #intro {
-    height: 100vh;
+    height: auto;
   }
   .video {
     display: none;
   }
   .cards {
+    transform: translateY(10%);
     margin-top: 10px;
     position: static;
     flex-direction: column;
@@ -1978,6 +1979,130 @@ input:checked + .text-box {
   color: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 767.98px) {
+  #services-choice {
+    height: auto;
+  }
+  .service-choice-info p {
+    text-align: left;
+    font-size: 9px;
+  }
+  .service-choice-title {
+    text-align: left;
+    font-size: 12px;
+  }
+  .percent-icon {
+    display: none;
+  }
+  .choice-box {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .choice-boxes {
+    flex-direction: column;
+  }
+  .choice-left {
+    margin-bottom: 20px;
+    width: 97%;
+    height: auto;
+  }
+  .choice-left h1 {
+    font-size: 10px;
+  }
+  .choice-left p {
+    line-height: 1;
+    width: 90%;
+    font-size: 12px;
+  }
+  .choice-left-buttons {
+    margin: 0;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .choice-left-buttons .arrow-left {
+    width: 42px;
+    height: 42px;
+    background-size: 18px;
+    padding: 12px;
+  }
+  .choice-left-buttons .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+  .choice-left-buttons .btn img {
+    margin-left: 10px;
+    width: 24px;
+  }
+  .choice-half-box .text-box {
+    height: 20rem;
+    width: 90%;
+  }
+  .choice-small-box {
+    padding-bottom: 24px;
+    width: 90%;
+    height: 70%;
+  }
+  .choice-small-box p {
+    margin-top: 24px;
+    width: 100%;
+  }
+  .small-box-img-wrapper {
+    height: 70%;
+    max-height: 460px;
+  }
+  .small-box-img-wrapper img {
+    width: 50%;
+    height: 100%;
+    max-width: 200px;
+  }
+  .custom-radio .checkmark {
+    left: 10%;
+    width: 25px;
+    height: 25px;
+  }
+  .custom-radio .checkmark::after {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+  }
+  .text-box {
+    display: none;
+    width: 80%;
+  }
+  .text-box p {
+    margin-left: 15%;
+  }
+  .choice-right-box {
+    height: unset;
+    width: 100%;
+  }
+  .choice-right-box h2 {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .choice-right-box h2:first-child {
+    margin-top: 0;
+  }
+  .bonus-box {
+    margin-top: 12px;
+    height: unset;
+    padding: 12px;
+  }
+  .bonus-box img {
+    width: 24px;
+  }
+  .bonus-box p {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+  .choice-right-link {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -2028,6 +2153,7 @@ input:checked + .text-box {
 .project-info {
   padding: 2.28rem;
   background: url(/dist/assets/img/projects-photo/info-projects.png);
+  background-size: cover;
   color: #fff;
 }
 
@@ -2103,6 +2229,65 @@ input:checked + .text-box {
   padding: 0.5rem 1.4rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0.28rem;
+}
+
+@media (max-width: 767.98px) {
+  #projects .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .projects-title {
+    width: 90%;
+    font-size: 14px;
+  }
+  .projects-subtitle {
+    font-size: 12px;
+  }
+  .projects-main {
+    flex-direction: column;
+  }
+  .project-box {
+    height: unset;
+    width: 100%;
+  }
+  .project-box:nth-child(6), .project-box:nth-child(7), .project-box:nth-child(9), .project-box:nth-child(10) {
+    display: none;
+  }
+  .project-box img {
+    height: auto;
+  }
+  .project-info {
+    height: 300px;
+    order: 10;
+  }
+  .project-info h2 {
+    font-size: 16px;
+  }
+  .project-info h3 {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .project-info .works {
+    margin-top: 14px;
+  }
+  .project-info .keys {
+    margin-top: 14px;
+  }
+  .project-info .keys h4 {
+    font-size: 12px;
+  }
+  .project-info p {
+    font-size: 10px;
+  }
+  .project-info a {
+    padding: 8px 14px;
+    font-size: 10px;
+  }
+  .project-info button {
+    margin-top: 14px;
+    padding: 8px 14px;
+    font-size: 10px;
+  }
 }
 
 #about {

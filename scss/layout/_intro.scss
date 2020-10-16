@@ -170,12 +170,13 @@
 
 @media (max-width: 767.98px) {
 	#intro {
-		height: 100vh;
+		height: auto;
 	}
 	.video {
 		display: none;
 	}
 	.cards {
+		transform: translateY(10%);
 		margin-top: 10px;
 		// height: 65vh;
 		position: static;
