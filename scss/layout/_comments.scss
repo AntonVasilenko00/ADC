@@ -46,7 +46,7 @@
 
 .thanks-letters {
 	@include container-left();
-	overflow-x: hidden;
+	overflow-x: auto;
 	margin-top: 3.42rem;
 	white-space: nowrap;
 	display: flex;
@@ -82,5 +82,50 @@
 	@include container();
 	.arrow-right {
 		margin-left: 1.5rem;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.reviews {
+		flex-direction: column;
+		h1 {
+			margin-top: 14px;
+			text-align: center;
+			font-size: 24px;
+		}
+		.btn {
+			margin-top: 14px;
+			padding: 8px 14px;
+			font-size: 16px;
+			width: unset;
+		}
+	}
+	.comment-links {
+		flex-direction: column;
+		a {
+			width: fit-content;
+			margin: 8px 0 0 0;
+			font-size: 12px;
+		}
+	}
+
+	.thanks-letters {
+		// flex-flow: wrap;
+		// align-items: flex-start;
+		// overflow-x: auto;
+		// width: 100%;
+		// padding: 0 0 0 5%;
+	}
+	.thanks-letter {
+		// width: 40%;
+		// height: 100%;
+		.pepsi {
+			// height: 10%;
+			// width: 90%;
+		}
+		.letter {
+			// width: 80%;
+			// height: 80%;
+		}
 	}
 }
