@@ -75,3 +75,76 @@
 		bottom: 0;
 	}
 }
+@media (max-width: 767.98px) {
+	#describe-task {
+		overflow-x: hidden;
+		padding-bottom: 0;
+	}
+	.describe-title {
+		width: 90%;
+		font-size: 24px;
+	}
+	.describe-items {
+		flex-direction: column;
+		width: 100%;
+	}
+	.describe-item {
+		p {
+			margin-left: 10%;
+			font-size: 16px;
+		}
+		img {
+			min-width: 40px;
+			height: auto;
+		}
+	}
+
+	.describe-girl {
+		max-width: 320px;
+		position: absolute;
+		bottom: 0;
+		right: -20%;
+		.person-card {
+			position: absolute;
+			left: -30%;
+			.person-card-name {
+				padding: 8px 16px;
+				font-size: 16px;
+			}
+			.person-card-role {
+				padding: 4px 0;
+				font-size: 12px;
+			}
+			left: 0;
+			bottom: 0;
+		}
+
+		.girl {
+			top: 0;
+			right: -30%;
+			width: 80%;
+			height: auto;
+			position: unset;
+		}
+	}
+	.describe-button-section {
+		flex-direction: column;
+		.btn {
+			// height: unset;
+			// padding: 8px 16px;
+			font-size: 16px;
+			max-width: 320px;
+		}
+		.button-info {
+			margin-top: 10px;
+			width: 100%;
+			// width: 30%;
+			font-size: 12px;
+		}
+	}
+}
+@media (max-width: 540px) {
+	.describe-girl {
+		position: relative;
+	}
+}
