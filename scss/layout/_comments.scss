@@ -50,6 +50,9 @@
 	margin-top: 3.42rem;
 	white-space: nowrap;
 	display: flex;
+	// display: grid;
+	// grid-template-columns: repeat(6, 1fr);
+	// grid-template-rows: 1;
 }
 
 .thanks-letter {
@@ -110,22 +113,23 @@
 	}
 
 	.thanks-letters {
+		overflow-x: hidden;
+		grid-auto-columns: 200px;
 		// flex-flow: wrap;
 		// align-items: flex-start;
-		// overflow-x: auto;
 		// width: 100%;
 		// padding: 0 0 0 5%;
 	}
 	.thanks-letter {
-		// width: 40%;
-		// height: 100%;
+		min-width: 40%;
+		min-height: 40vh;
 		.pepsi {
-			// height: 10%;
-			// width: 90%;
+			height: 10%;
+			width: 90%;
 		}
 		.letter {
-			// width: 80%;
-			// height: 80%;
+			width: 80%;
+			height: 80%;
 		}
 	}
 }

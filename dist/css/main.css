@@ -2745,6 +2745,22 @@ input:checked + .text-box {
     margin: 8px 0 0 0;
     font-size: 12px;
   }
+  .thanks-letters {
+    overflow-x: hidden;
+    grid-auto-columns: 200px;
+  }
+  .thanks-letter {
+    min-width: 40%;
+    min-height: 40vh;
+  }
+  .thanks-letter .pepsi {
+    height: 10%;
+    width: 90%;
+  }
+  .thanks-letter .letter {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 #describe-task {
