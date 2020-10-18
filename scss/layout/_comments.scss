@@ -45,6 +45,7 @@
 }
 
 .thanks-letters {
+	// padding-right: 300px;
 	min-width: 100%;
 	@include container-left();
 	overflow-x: auto;
@@ -124,7 +125,12 @@
 			font-size: 12px;
 		}
 	}
-
+	.comments-buttons {
+		.btn-arrow-outline {
+			padding: 24px;
+			background-size: 24px;
+		}
+	}
 	.thanks-letters {
 		// position: relative;
 		// grid-auto-columns: 200px;
@@ -135,6 +141,7 @@
 	}
 	.thanks-letter {
 		min-width: 200px;
-		min-height: 40vh;
+		height: 40vh;
+		min-height: 260px;
 	}
 }

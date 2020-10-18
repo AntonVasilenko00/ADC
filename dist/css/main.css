@@ -2750,12 +2750,17 @@ input:checked + .text-box {
     margin: 8px 0 0 0;
     font-size: 12px;
   }
+  .comments-buttons .btn-arrow-outline {
+    padding: 24px;
+    background-size: 24px;
+  }
   .thanks-letters {
     padding: 0 0 0 5%;
   }
   .thanks-letter {
     min-width: 200px;
-    min-height: 40vh;
+    height: 40vh;
+    min-height: 260px;
   }
 }
 

@@ -46,3 +46,22 @@ burger.addEventListener("click", () => {
 	burger.classList.toggle("burger-active");
 	header.classList.toggle("header-active");
 });
+
+const horizontalScroll = (toggleId, leftId, rightId) => {
+	const toggle = document.getElementById(toggleId);
+	left = document.getElementById(leftId);
+	right = document.getElementById(rightId);
+
+	if(toggle && left && right) {
+		left.addEventListener('click',()=>{
+			toggle.scrollLeft-=250;
+		})
+		right.addEventListener('click',()=>{
+
+			toggle.scrollLeft+=250;
+		})
+	}
+}
+
+// Run
+horizontalScroll("letters-scroll","letters-left","letters-right");
