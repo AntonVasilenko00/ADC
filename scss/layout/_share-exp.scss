@@ -1,5 +1,6 @@
 #share-exp {
 	overflow-x: hidden;
+	width: 100%;
 	display: flex;
 	@include container-left();
 	border-bottom: 1px solid rgba($clr-black, 0.1);
@@ -35,16 +36,16 @@
 	}
 }
 .exp-boxes {
-	white-space: nowrap;
-	min-width: 100%;
-	max-width: 368px;
-	min-height: 80%;
+	// white-space: nowrap;
+	// max-width: 368px;
+	// min-height: 80%;
+	// min-width: 100%;
 	overflow-x: auto;
 	&::-webkit-scrollbar {
-		// display: none;
+		display: none;
 	}
 	margin-top: 5.07rem;
-	padding-left: 7.87rem;
+	margin-left: 7.87rem;
 	display: flex;
 }
 
@@ -59,7 +60,7 @@
 	margin-left: 2.14rem;
 	box-shadow: 0 -0.71rem 5rem rgba(82, 141, 199, 0.1);
 	border-radius: 0.71rem;
-	width: 26.28rem;
+	min-width: 26.28rem;
 	height: 28.7rem;
 	// width: 23%;
 	img {
@@ -72,13 +73,12 @@
 .exp-box-main {
 	margin-left: 2.5rem;
 	h2 {
-		white-space: normal;
+		margin-top: 2rem;
 		font-size: 1.43rem;
 		font-weight: 600;
 		line-height: 1.3;
 	}
 	p {
-		white-space: normal;
 		width: 80%;
 		font-size: 1.14rem;
 		line-height: 1.5;
@@ -86,7 +86,7 @@
 	}
 	a {
 		display: inline-block;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		font-size: 1rem;
 		font-weight: 700;
 		color: $clr-blue;
@@ -123,6 +123,31 @@
 		.btn-arrow-outline {
 			padding: 24px;
 			background-size: 24px;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	.exp-box {
+		min-width: 240px;
+		width: 65%;
+		min-height: 150px;
+		max-width: 368px;
+		height: 40vh;
+	}
+	.exp-box-main {
+		h2 {
+			margin-top: 10px;
+			font-size: 14px;
+		}
+		p {
+			margin-top: 8px;
+			font-size: 9px;
+		}
+
+		a {
+			margin-top: 8px;
+			font-size: 12px;
 		}
 	}
 }

@@ -54,14 +54,33 @@ const horizontalScroll = (toggleId, leftId, rightId) => {
 
 	if(toggle && left && right) {
 		left.addEventListener('click',()=>{
-			toggle.scrollLeft-=250;
+			if(toggle.scrollLeft == 0){
+				toggle.style.transition = "all 0.1s linear";
+				toggle.style.transform="translateX(5px)";
+				setTimeout(()=>{
+					toggle.style.transform="translateX(0)";
+				},300);
+			}
+			else {
+				toggle.scrollLeft-=240;
+			}
 		})
 		right.addEventListener('click',()=>{
 
-			toggle.scrollLeft+=250;
+			toggle.scrollLeft+=240;
 		})
 	}
 }
 
+// turn off clickable links
+$("a").click 
+(
+    function (evt)
+    {
+        evt.preventDefault(); 
+        return false;  
+    } 
+);
 // Run
 horizontalScroll("letters-scroll","letters-left","letters-right");
+horizontalScroll("exp-boxes","box-left","box-right");
