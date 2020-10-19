@@ -642,15 +642,16 @@
 }
 
 .toggle-services .submenu-links {
-  padding: 0 10%;
+  padding: 0 5% 0 10%;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
 }
 
 .toggle-services .submenu-links li {
   letter-spacing: 0.02em;
   font-weight: 600;
-  margin-left: 5rem;
   font-size: 1rem;
 }
 
@@ -1176,7 +1177,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   height: 100%;
   font-family: "Gilroy", sans-serif;
   font-weight: normal;
@@ -2591,6 +2591,7 @@ input:checked + .text-box {
 }
 
 #comments {
+  overflow-x: hidden;
   padding-bottom: 6.2rem;
 }
 
@@ -2668,10 +2669,22 @@ input:checked + .text-box {
 
 .thanks-letters {
   min-width: 100%;
-  padding: 0 0 0 calc(50% - 42rem);
   overflow-x: auto;
   margin-top: 3.42rem;
   display: flex;
+}
+
+@media (min-width: 768px) {
+  .thanks-letters {
+    padding-left: calc(50% - 42rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .thanks-letters {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 .thanks-letters::-webkit-scrollbar {
@@ -2928,9 +2941,21 @@ input:checked + .text-box {
 #share-exp {
   overflow-x: hidden;
   display: flex;
-  padding: 0 0 0 calc(50% - 42rem);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 4.64rem;
+}
+
+@media (min-width: 768px) {
+  #share-exp {
+    padding-left: calc(50% - 42rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  #share-exp {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
 }
 
 .exp-main {
@@ -2965,13 +2990,16 @@ input:checked + .text-box {
 }
 
 .exp-boxes {
+  overflow-x: auto;
+  min-width: 100%;
   margin-top: 5.07rem;
+  margin-left: 7.87rem;
   display: flex;
 }
 
 .exp-box {
   margin-left: 2.14rem;
-  box-shadow: 0 0.71rem 5rem rgba(82, 141, 199, 0.1);
+  box-shadow: 0 -0.71rem 5rem rgba(82, 141, 199, 0.1);
   border-radius: 0.71rem;
   width: 26.28rem;
   height: 28.7rem;
@@ -3020,6 +3048,33 @@ input:checked + .text-box {
 
 .exp-box-main a:hover {
   border-color: #528dc7;
+}
+
+@media (max-width: 767.98px) {
+  #share-exp {
+    width: 100%;
+    flex-direction: column;
+  }
+  .exp-main {
+    width: 100%;
+  }
+  .exp-title {
+    min-width: 320px;
+    width: 100%;
+    font-size: 24px;
+  }
+  .exp-info {
+    width: 100%;
+    font-size: 16px;
+  }
+  .exp-button-group .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  .exp-button-group .btn-arrow-outline {
+    padding: 24px;
+    background-size: 24px;
+  }
 }
 
 #big-text {

@@ -37,9 +37,14 @@
 		padding-right: 3%;
 	}
 }
-
 @mixin container-left() {
-	padding: 0 0 0 calc(50% - 42rem);
+	@media (min-width: 768px) {
+		padding-left: calc(50% - 42rem);
+	}
+	@media (max-width: 767.98px) {
+		padding-left: 3%;
+		padding-right: 3%;
+	}
 }
 
 @mixin border-radius() {

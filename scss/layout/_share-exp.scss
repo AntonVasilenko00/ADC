@@ -35,7 +35,10 @@
 	}
 }
 .exp-boxes {
+	overflow-x: auto;
+	min-width: 100%;
 	margin-top: 5.07rem;
+	margin-left: 7.87rem;
 	display: flex;
 }
 
@@ -48,7 +51,7 @@
 		margin-left: 0;
 	}
 	margin-left: 2.14rem;
-	box-shadow: 0 0.71rem 5rem rgba(82, 141, 199, 0.1);
+	box-shadow: 0 -0.71rem 5rem rgba(82, 141, 199, 0.1);
 	border-radius: 0.71rem;
 	width: 26.28rem;
 	height: 28.7rem;
@@ -81,6 +84,35 @@
 		transition: all 0.5s linear;
 		&:hover {
 			border-color: $clr-blue;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+	#share-exp {
+		width: 100%;
+		flex-direction: column;
+	}
+	.exp-main {
+		width: 100%;
+	}
+	.exp-title {
+		min-width: 320px;
+		width: 100%;
+		font-size: 24px;
+	}
+	.exp-info {
+		width: 100%;
+		font-size: 16px;
+	}
+	.exp-button-group {
+		.btn {
+			font-size: 14px;
+			padding: 8px 16px;
+		}
+		.btn-arrow-outline {
+			padding: 24px;
+			background-size: 24px;
 		}
 	}
 }

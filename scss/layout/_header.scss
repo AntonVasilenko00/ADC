@@ -111,8 +111,10 @@
 		color: rgba($clr-black, 0.5);
 	}
 	.submenu-links {
-		padding: 0 10%;
+		padding: 0 5% 0 10%;
 		display: flex;
+		width: 100%;
+		justify-content: space-between;
 		align-items: center;
 		li {
 			letter-spacing: 0.02em;
@@ -120,7 +122,7 @@
 				margin-left: 0;
 			}
 			font-weight: 600;
-			margin-left: 5rem;
+			// margin-left: 5rem;
 			font-size: 1rem;
 		}
 		a {
