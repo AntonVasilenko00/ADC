@@ -622,6 +622,7 @@
 }
 
 .toggle-services .submenu {
+  overflow-x: hidden;
   padding-bottom: 4.07rem;
   background: #fff;
   width: 100%;
@@ -3104,7 +3105,7 @@ input:checked + .text-box {
     width: 65%;
     min-height: 150px;
     max-width: 368px;
-    height: 40vh;
+    height: 45vh;
   }
   .exp-box-main h2 {
     margin-top: 10px;
@@ -3146,10 +3147,13 @@ input:checked + .text-box {
 }
 
 #big-text p {
+  transition: all 0.3s linear;
+  overflow: hidden;
   margin-top: 1.64rem;
   font-size: 1.43rem;
   line-height: 1.5;
   font-size: 400;
+  height: 48px;
 }
 
 #big-text a {
@@ -3177,9 +3181,7 @@ input:checked + .text-box {
     font-size: 18px;
   }
   #big-text p {
-    transition: all 0.3s linear;
     height: 68px;
-    overflow: hidden;
     font-size: 16px;
   }
   #big-text a {
@@ -3535,4 +3537,70 @@ input:checked + .text-box {
 .footer-right-info a:hover {
   color: #fff;
   border-color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  #footer {
+    height: unset;
+    background: #1a1a22;
+  }
+  #footer .phone-card {
+    display: none;
+  }
+  #footer h3 {
+    margin: 0 auto;
+    font-size: 24px;
+  }
+  #footer ul {
+    width: 100%;
+  }
+  #footer li {
+    width: 100%;
+  }
+  #footer a {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+  #footer label {
+    position: relative;
+    font-size: 9px;
+  }
+  #footer button {
+    margin-top: 3%;
+    margin-left: 0;
+    width: unset;
+    height: unset;
+    max-height: unset;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  #footer #phone.btn {
+    font-size: 16px;
+    padding: 8px 42px;
+  }
+  #footer form {
+    flex-direction: column;
+  }
+  .footer-top {
+    justify-content: unset;
+    height: auto;
+    flex-direction: column;
+  }
+  .footer-top h3 img {
+    width: 30px;
+    height: auto;
+  }
+  .footer-middle {
+    flex-direction: column;
+  }
+  .footer-middle .service {
+    width: 100%;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-nav-links {
+    flex-direction: column;
+  }
 }

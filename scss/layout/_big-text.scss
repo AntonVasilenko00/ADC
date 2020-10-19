@@ -8,10 +8,13 @@
 		font-weight: 700;
 	}
 	p {
+		transition: all 0.3s linear;
+		overflow: hidden;
 		margin-top: 1.64rem;
 		font-size: 1.43rem;
 		line-height: 1.5;
 		font-size: 400;
+		height: 48px;
 	}
 	a {
 		display: inline-block;
@@ -36,9 +39,7 @@
 			font-size: 18px;
 		}
 		p {
-			transition: all 0.3s linear;
 			height: 68px;
-			overflow: hidden;
 			font-size: 16px;
 		}
 		a {

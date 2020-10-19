@@ -276,3 +276,73 @@
 		}
 	}
 }
+
+@media (max-width: 767.98px) {
+	#footer {
+		.phone-card {
+			display: none;
+		}
+		height: unset;
+		background: $clr-dark;
+		h3 {
+			margin: 0 auto;
+			// width: 90%;
+			font-size: 24px;
+		}
+		ul {
+			width: 100%;
+		}
+		li {
+			width: 100%;
+		}
+		a {
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
+		}
+		label {
+			position: relative;
+			font-size: 9px;
+		}
+		button {
+			margin-top: 3%;
+			margin-left: 0;
+			width: unset;
+			height: unset;
+			max-height: unset;
+			font-size: 16px;
+			padding: 8px 16px;
+		}
+		#phone.btn {
+			font-size: 16px;
+			padding: 8px 42px;
+		}
+		form {
+			flex-direction: column;
+		}
+	}
+
+	.footer-top {
+		justify-content: unset;
+		h3 img {
+			width: 30px;
+			height: auto;
+		}
+		height: auto;
+		flex-direction: column;
+	}
+
+	.footer-middle {
+		flex-direction: column;
+		.service {
+			width: 100%;
+		}
+	}
+	.footer-bottom {
+		flex-direction: column;
+	}
+
+	.footer-nav-links {
+		flex-direction: column;
+	}
+}
