@@ -498,8 +498,24 @@
 	#header-nav {
 		margin-left: 1.5rem;
 	}
+	.toggle-services {
+		.submenu-second-group {
+			margin-left: 20rem;
+		}
+	}
 }
 @media (max-width: 1023.9px) {
+	.toggle-services {
+		.submenu-second-group {
+			margin-left: 24rem;
+		}
+		.submenu-links {
+			padding: 0 1%;
+		}
+		.submenu-bottom {
+			margin-left: 1%;
+		}
+	}
 	.nav-links {
 		li {
 			margin-left: 1.7rem;
