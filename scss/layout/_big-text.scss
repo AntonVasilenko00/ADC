@@ -28,3 +28,29 @@
 		height: auto;
 	}
 }
+
+@media (max-width: 767.98px) {
+	#big-text {
+		padding: 20px 3%;
+		h2 {
+			font-size: 18px;
+		}
+		p {
+			transition: all 0.3s linear;
+			height: 68px;
+			overflow: hidden;
+			font-size: 16px;
+		}
+		a {
+			font-size: 16px;
+		}
+
+		img {
+			width: 12px;
+			height: auto;
+		}
+	}
+}
+.show-more-text {
+	height: auto !important;
+}

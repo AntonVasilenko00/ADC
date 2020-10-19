@@ -72,6 +72,26 @@ const horizontalScroll = (toggleId, leftId, rightId) => {
 	}
 }
 
+const toggleText = (contentID, toggleID, arrowID) => {
+	const content = document.getElementById(contentID);
+	const toggle = document.getElementById(toggleID);
+	const arrow = document.getElementById(arrowID);
+	arrow.style.transition = "all 0.2s ease-in-out"
+	toggle.addEventListener('click',()=> {
+		if(content.classList.contains("show-more-text")) {
+			arrow.style.transform = "rotate(0)"
+			content.classList.remove("show-more-text");
+			console.log("1")
+		}
+		else {
+			console.log("2")
+			arrow.style.transform = "rotate(180deg)"
+			content.classList.add("show-more-text");
+		
+		}
+	})
+}
+
 // turn off clickable links
 $("a").click 
 (
@@ -82,5 +102,6 @@ $("a").click
     } 
 );
 // Run
+toggleText("big-text-content","big-text-toggle","big-text-arrow");
 horizontalScroll("letters-scroll","letters-left","letters-right");
 horizontalScroll("exp-boxes","box-left","box-right");

@@ -3096,6 +3096,9 @@ input:checked + .text-box {
 }
 
 @media (max-width: 767.98px) {
+  .exp-boxes {
+    margin-left: 0;
+  }
   .exp-box {
     min-width: 240px;
     width: 65%;
@@ -3164,6 +3167,32 @@ input:checked + .text-box {
 #big-text img {
   width: 0.77rem;
   height: auto;
+}
+
+@media (max-width: 767.98px) {
+  #big-text {
+    padding: 20px 3%;
+  }
+  #big-text h2 {
+    font-size: 18px;
+  }
+  #big-text p {
+    transition: all 0.3s linear;
+    height: 68px;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  #big-text a {
+    font-size: 16px;
+  }
+  #big-text img {
+    width: 12px;
+    height: auto;
+  }
+}
+
+.show-more-text {
+  height: auto !important;
 }
 
 #footer {
