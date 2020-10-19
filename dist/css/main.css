@@ -3198,6 +3198,7 @@ input:checked + .text-box {
 }
 
 #footer {
+  overflow-x: hidden;
   background: url(/dist/assets/img/footer-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -3550,9 +3551,6 @@ input:checked + .text-box {
   #footer h3 {
     margin: 0 auto;
     font-size: 24px;
-  }
-  #footer ul {
-    width: 100%;
   }
   #footer li {
     width: 100%;
