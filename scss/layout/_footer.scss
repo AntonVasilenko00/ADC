@@ -234,13 +234,13 @@
 		opacity: 0.5;
 	}
 	i {
-		margin-left: 0.5rem;
+		&::before {
+			margin-left: -25%;
+		}
+		// margin-left: 0.5rem;
 		text-align: center;
 		transition: all 0.2s ease-out;
-		&:first-child {
-			margin-left: 1rem;
-			padding: 0.9rem 0.9rem 0.8rem 0.7rem;
-		}
+		margin-left: 1rem;
 		width: 2.57rem;
 		height: 2.57rem;
 		color: rgba($clr-white, 0.5);
@@ -280,15 +280,16 @@
 
 @media (max-width: 767.98px) {
 	#footer {
+		padding-bottom: 10px;
 		.phone-card {
 			display: none;
 		}
 		height: unset;
 		background: $clr-dark;
 		h3 {
-			margin: 0 auto;
+			margin: 15px auto 0;
 			// width: 90%;
-			font-size: 24px;
+			font-size: 32px;
 		}
 		ul {
 			// width: 100%;
@@ -297,9 +298,10 @@
 			width: 100%;
 		}
 		a {
-			width: 100%;
-			text-align: center;
-			font-size: 16px;
+			letter-spacing: 0.05em;
+			// width: 100%;
+			// text-align: center;
+			font-size: 18px;
 		}
 		label {
 			position: relative;
@@ -321,9 +323,21 @@
 		form {
 			flex-direction: column;
 		}
+		.service-links {
+			padding-bottom: 20px;
+			.plus {
+				width: 5%;
+				text-align: right;
+			}
+			a {
+				padding-bottom: 5px;
+				width: 95%;
+			}
+		}
 	}
 
 	.footer-top {
+		padding-bottom: 20px;
 		justify-content: unset;
 		h3 img {
 			width: 30px;
@@ -332,18 +346,79 @@
 		height: auto;
 		flex-direction: column;
 	}
-
+	.strong-links {
+		a {
+			font-size: 26px;
+			// width: 80%;
+			padding-bottom: 10px;
+		}
+	}
 	.footer-middle {
+		margin-top: 10px;
 		flex-direction: column;
 		.service {
 			width: 100%;
 		}
 	}
 	.footer-bottom {
+		margin-top: 20px;
+		.logo {
+			img {
+				width: 60px;
+				height: auto;
+			}
+		}
+		align-items: flex-start;
 		flex-direction: column;
 	}
 
 	.footer-nav-links {
+		margin: 20px 0 0 0;
+		width: 100%;
 		flex-direction: column;
+		li {
+			&:first-child {
+				margin-top: 0;
+			}
+			margin-top: 8px;
+		}
+	}
+	.footer-social {
+		width: 100%;
+		// padding-right: 20px;
+		margin: 8px 0 0 0;
+		justify-content: space-between;
+		a {
+			width: 40px;
+			height: 40px;
+			// margin-left: 20px;
+		}
+		i {
+			position: relative;
+			padding: 20px;
+			&::before {
+				top: 35%;
+				left: 50%;
+				position: absolute;
+			}
+		}
+		p {
+			display: inline-block;
+			font-size: 16px;
+		}
+	}
+	.footer-right-info {
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		margin: 8px 0 0 0;
+		width: 100%;
+		a {
+			margin: 0;
+		}
+		p {
+			margin-left: 25px;
+			width: auto;
+			font-size: 14px;
+		}
 	}
 }
