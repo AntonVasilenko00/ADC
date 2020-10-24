@@ -3372,7 +3372,6 @@ input:checked + .text-box {
 
 .footer-middle .other-services-li {
   display: flex;
-  flex-direction: column;
 }
 
 .footer-middle .other-services-li a {

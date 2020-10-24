@@ -6,12 +6,21 @@ function toggleSearchDropdown() {
 	document.getElementById("search-field").select();
 }
 // services
-function otherServicesToggle() {
-	document.getElementById("other-services-dropdown-content").classList.toggle("active");
-	const p = document.getElementById("last-plus");
-	p.innerHTML == "+" ? (p.innerHTML = "-") : (p.innerHTML = "+");
-	document.getElementById("last-divider").classList.toggle("hide");
-}
+const otherServicesToggle = () =>{
+	const links = document.querySelectorAll(".service-link");
+	links.forEach(link =>{
+		link.addEventListener("click",()=>{
+			link.siblings().classList.add("active");
+			console.log("setActive");
+		});
+	} );
+		
+	}
+// function otherServicesToggle() {
+// 	document.getElementById("other-services-dropdown-content").classList.toggle("active");
+// 	const p = document.getElementById("last-plus");
+// 	p.innerHTML == "+" ? (p.innerHTML = "-") : (p.innerHTML = "+");
+// 	document.getElementById("last-divider").classList.toggle("hide");
 
 // Phone card
 function togglePhone() {
@@ -105,3 +114,4 @@ $("a").click
 toggleText("big-text-content","big-text-toggle","big-text-arrow");
 horizontalScroll("letters-scroll","letters-left","letters-right");
 horizontalScroll("exp-boxes","box-left","box-right");
+otherServicesToggle();
