@@ -8,10 +8,19 @@ function toggleSearchDropdown() {
 // services
 const otherServicesToggle = () =>{
 	const links = document.querySelectorAll(".service-link");
-	links.forEach(link =>{
+	const footerDividers = document.querySelectorAll(".service-links .footer-divider");
+	console.log(footerDividers);
+
+	links.forEach(function(link,i){
 		link.addEventListener("click",()=>{
-			link.siblings().classList.add("active");
-			console.log("setActive");
+			const ul = link.nextSibling.nextSibling;
+			const plus = link.children[0];
+			plus.innerHTML=="+" ? (plus.innerHTML) = "-" : (plus.innerHTML = "+"); 
+			console.log(plus);
+			console.log(i);
+			ul.classList.toggle("active");
+			footerDividers[i].classList.toggle("hide");
+
 		});
 	} );
 		

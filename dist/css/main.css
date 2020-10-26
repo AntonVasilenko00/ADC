@@ -3204,7 +3204,6 @@ input:checked + .text-box {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 52.8rem;
   color: white;
 }
 
@@ -3294,6 +3293,10 @@ input:checked + .text-box {
   background: rgba(255, 255, 255, 0.1);
 }
 
+.footer-divider.hide {
+  display: none;
+}
+
 .footer-middle {
   display: flex;
   justify-content: space-between;
@@ -3341,12 +3344,8 @@ input:checked + .text-box {
 
 .footer-middle .service-links li {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   margin-top: 1.2rem;
-}
-
-.footer-middle .service-links li:first-child {
-  margin-top: 2.28rem;
 }
 
 .footer-middle .service-links .plus {
@@ -3355,7 +3354,8 @@ input:checked + .text-box {
 
 .footer-middle .service-links a {
   width: 100%;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
   font-size: 1.14rem;
   color: #727272;
   padding-bottom: 1.2rem;
@@ -3383,36 +3383,46 @@ input:checked + .text-box {
   display: flex;
 }
 
-.footer-middle .other-services {
-  transition: opacity 0.3s ease-out;
-  height: 0;
-  position: absolute;
+.footer-middle .service-link + ul {
+  transition: all 0.3s ease-out;
   opacity: 0;
+  height: 0;
+  visibility: hidden;
 }
 
-.footer-middle .other-services li {
-  margin-top: 0.5rem;
+.footer-middle .service-link + ul li {
+  margin: 0.5rem 0;
 }
 
-.footer-middle .other-services a {
+.footer-middle .service-link + ul li:hover a {
+  border-color: #fff;
+}
+
+.footer-middle .service-link + ul li:first-child {
+  margin-top: 0;
+}
+
+.footer-middle .service-link + ul a {
   width: auto;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 1rem;
 }
 
-.footer-middle .other-services a:hover {
-  border-color: #fff;
-}
-
-.footer-middle .hide {
-  display: none;
-}
-
-.footer-middle .active {
+.footer-middle .service-link + ul.active {
+  height: auto;
+  visibility: visible;
   display: block;
   opacity: 1;
   transform: translate(0);
+}
+
+.footer-middle .service-sub-links li {
+  margin-top: 0;
+}
+
+.footer-middle .service-sub-links a {
+  width: fit-content;
 }
 
 .footer-middle .for-clients h3 {
@@ -3421,7 +3431,7 @@ input:checked + .text-box {
 }
 
 .footer-middle .for-clients a {
-  width: auto;
+  width: fit-content;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding-bottom: 0rem;
 }
@@ -3431,6 +3441,7 @@ input:checked + .text-box {
 }
 
 .footer-bottom {
+  padding: 2rem 0;
   margin-top: 1.5rem;
   display: flex;
   align-items: center;
