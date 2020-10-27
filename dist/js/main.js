@@ -9,15 +9,25 @@ function toggleSearchDropdown() {
 const otherServicesToggle = () =>{
 	const links = document.querySelectorAll(".service-link");
 	const footerDividers = document.querySelectorAll(".service-links .footer-divider");
-	console.log(footerDividers);
 
 	links.forEach(function(link,i){
 		link.addEventListener("click",()=>{
+			// close other
+			links.forEach(function(link2,i){
+			const ul = link2.nextSibling.nextSibling;
+			const plus = link2.children[0];
+			console.log(link);
+			console.log(link2);
+			if((plus.innerHTML=="-")  && (link != link2)){
+				plus.innerHTML = "+";
+				ul.classList.remove("active");
+				footerDividers[i].classList.toggle("hide");
+			}
+			})
+			// open
 			const ul = link.nextSibling.nextSibling;
 			const plus = link.children[0];
 			plus.innerHTML=="+" ? (plus.innerHTML) = "-" : (plus.innerHTML = "+"); 
-			console.log(plus);
-			console.log(i);
 			ul.classList.toggle("active");
 			footerDividers[i].classList.toggle("hide");
 
