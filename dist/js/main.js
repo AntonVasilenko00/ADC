@@ -16,8 +16,6 @@ const otherServicesToggle = () =>{
 			links.forEach(function(link2,i){
 			const ul = link2.nextSibling.nextSibling;
 			const plus = link2.children[0];
-			console.log(link);
-			console.log(link2);
 			if((plus.innerHTML=="-")  && (link != link2)){
 				plus.innerHTML = "+";
 				ul.classList.remove("active");

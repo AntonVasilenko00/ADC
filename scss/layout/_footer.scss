@@ -153,7 +153,8 @@
 		display: flex;
 	}
 	.service-link + ul {
-		transition: all 0.3s ease-out;
+		transform: translateY(-100%);
+		transition: translate 0.3s linear, opacity 0.1s ease-out;
 		opacity: 0;
 		height: 0;
 		visibility: hidden;
@@ -183,7 +184,7 @@
 			visibility: visible;
 			display: block;
 			opacity: 1;
-			transform: translate(0);
+			transform: translateY(0);
 		}
 	}
 	.service-sub-links {
