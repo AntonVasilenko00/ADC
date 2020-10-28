@@ -127,6 +127,24 @@ const toggleText = (contentID, toggleID, arrowID) => {
 	})
 }
 
+const toggleArrowDown = () => {
+	const arrow = document.getElementById("footer-arrow-down");
+	const ul = document.getElementById("footer-phone-links");
+	const activePhone = document.getElementById("footer-active-phone");
+	const container = document.getElementById("footer-phone-wrapper");
+	arrow.addEventListener("mouseover", ()=>{
+		arrow.style.display = "none";
+		ul.style.display="block";
+		activePhone.style.display="none";
+	})
+	container.addEventListener("mouseleave",()=>{
+		arrow.style.display = "block";
+		ul.style.display="none";
+		activePhone.style.display = "block";
+	}) 
+
+	
+}
 // turn off clickable links
 $("a").click 
 (
@@ -137,6 +155,7 @@ $("a").click
     } 
 );
 // Run
+toggleArrowDown();
 toggleText("big-text-content","big-text-toggle","big-text-arrow");
 horizontalScroll("letters-scroll","letters-left","letters-right");
 horizontalScroll("exp-boxes","box-left","box-right");

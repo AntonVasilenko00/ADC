@@ -55,7 +55,7 @@
 	// position: relative;
 	white-space: nowrap;
 	width: 71.8rem;
-	padding: 0.5rem;
+	padding: 0.5rem 2rem 0.5rem 0.5rem;
 	overflow-x: auto;
 	&::-webkit-scrollbar {
 		display: none;
@@ -70,7 +70,7 @@
 	border-radius: 100%;
 	position: absolute;
 	right: 15%;
-	top: 40%;
+	top: 30%;
 	width: 1.78rem;
 	height: 1.78rem;
 	background: $clr-blue;
@@ -78,9 +78,15 @@
 }
 
 .scroll-link {
-	margin-left: 3.8rem;
+	padding: 1rem;
+	margin-left: 1.8rem;
 	&:first-child {
 		margin: 0;
+	}
+	&:hover {
+		background-color: $clr-blue;
+		color: $clr-white;
+		@include border-radius();
 	}
 	color: rgba($clr-black, 0.3);
 	// padding: 0 1rem;
@@ -181,6 +187,7 @@
 		}
 	}
 	#services-scroll-nav {
+		padding-right: 15px;
 		width: 80%;
 		a {
 			font-size: 12px;
@@ -189,11 +196,12 @@
 			line-height: unset;
 			padding: 5px;
 		}
-		img {
-			right: 21%;
-			width: 10px;
-			height: 10px;
-		}
+	}
+	#service-img {
+		top: 40%;
+		right: 21%;
+		width: 10px;
+		height: 10px;
 	}
 	.services-box {
 		padding-bottom: 10rem;
