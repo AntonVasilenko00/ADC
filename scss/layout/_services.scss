@@ -30,17 +30,17 @@
 		width: 4.26rem;
 		height: 4.26rem;
 	}
-	&::after {
-		content: "";
-		z-index: 1000;
-		// background-color: red;
-		background: linear-gradient(to right, rgba($clr-white, 0.1), rgba($clr-white, 1));
-		position: absolute;
-		right: 13%;
-		width: 7rem;
-		height: 20px;
-		backdrop-filter: blur(3px);
-	}
+	// &::after {
+	// 	content: "";
+	// 	z-index: 1000;
+	// 	// background-color: red;
+	// 	background: linear-gradient(to right, rgba($clr-white, 0.1), rgba($clr-white, 1));
+	// 	position: absolute;
+	// 	right: 13%;
+	// 	width: 7rem;
+	// 	height: 20px;
+	// 	backdrop-filter: blur(3px);
+	// }
 }
 
 .nav-buttons {
@@ -62,18 +62,19 @@
 	}
 	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.04);
 	@include sroll-box-border-radius();
-	img {
-		display: none;
-		transform: rotate(-90deg);
-		border-radius: 100%;
-		position: absolute;
-		right: 15%;
-		top: 40%;
-		width: 1.78rem;
-		height: 1.78rem;
-		background: $clr-blue;
-		padding: 0.36rem;
-	}
+}
+
+#service-img {
+	// display: none;
+	transform: rotate(-90deg);
+	border-radius: 100%;
+	position: absolute;
+	right: 15%;
+	top: 40%;
+	width: 1.78rem;
+	height: 1.78rem;
+	background: $clr-blue;
+	padding: 0.36rem;
 }
 
 .scroll-link {

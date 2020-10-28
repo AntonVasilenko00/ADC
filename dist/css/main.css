@@ -1553,17 +1553,6 @@ a {
   height: 4.26rem;
 }
 
-.horizontal-scroll-menu::after {
-  content: "";
-  z-index: 1000;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), white);
-  position: absolute;
-  right: 13%;
-  width: 7rem;
-  height: 20px;
-  backdrop-filter: blur(3px);
-}
-
 .nav-buttons {
   padding-top: 0.5rem;
   margin-left: 2rem;
@@ -1586,8 +1575,7 @@ a {
   display: none;
 }
 
-#services-scroll-nav img {
-  display: none;
+#service-img {
   transform: rotate(-90deg);
   border-radius: 100%;
   position: absolute;
