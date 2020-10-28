@@ -92,8 +92,17 @@ const horizontalScroll = (toggleId, leftId, rightId) => {
 			}
 		})
 		right.addEventListener('click',()=>{
+			if(toggle.offsetWidth+toggle.scrollLeft + 1 >= toggle.scrollWidth){
+				toggle.style.transition = "all 0.1s linear";
+				toggle.style.transform="translateX(-5px)";
+				setTimeout(()=>{
+					toggle.style.transform="translateX(0)";
+				},300);
 
-			toggle.scrollLeft+=240;
+			} else {
+				toggle.scrollLeft+=240;
+
+			}
 		})
 	}
 }
@@ -107,10 +116,8 @@ const toggleText = (contentID, toggleID, arrowID) => {
 		if(content.classList.contains("show-more-text")) {
 			arrow.style.transform = "rotate(0)"
 			content.classList.remove("show-more-text");
-			console.log("1")
 		}
 		else {
-			console.log("2")
 			arrow.style.transform = "rotate(180deg)"
 			content.classList.add("show-more-text");
 		
@@ -131,4 +138,5 @@ $("a").click
 toggleText("big-text-content","big-text-toggle","big-text-arrow");
 horizontalScroll("letters-scroll","letters-left","letters-right");
 horizontalScroll("exp-boxes","box-left","box-right");
+horizontalScroll("services-scroll-nav","services-left","services-right");
 otherServicesToggle();

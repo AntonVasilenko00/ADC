@@ -193,7 +193,7 @@
 			margin-top: 0;
 		}
 		a {
-			width: fit-content;
+			width: fit-content !important;
 		}
 	}
 	// Other services end
@@ -203,7 +203,7 @@
 			font-weight: 700;
 		}
 		a {
-			width: fit-content;
+			width: fit-content !important;
 			border-bottom: 1px solid rgba($clr-white, 0.1);
 			padding-bottom: 0rem;
 			&:hover {
