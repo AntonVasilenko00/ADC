@@ -26,6 +26,7 @@ const toggleBigSubmenu = () => {
 		
 	
 }
+
 // services
 const otherServicesToggle = () =>{
 	const links = document.querySelectorAll(".service-link");
@@ -92,6 +93,7 @@ const burger = document.querySelector(".burger");
 const header = document.querySelector("#header");
 const wrapper = document.getElementById("bigSubmenuWrapper");
 const arrow = document.getElementById("bigSubmenuArrow");
+
 burger.addEventListener("click", () => {
 	burger.classList.toggle("burger-active");
 	header.classList.toggle("header-active");
@@ -168,9 +170,25 @@ const toggleArrowDown = () => {
 		arrow.style.display = "block";
 		ul.style.display="none";
 		activePhone.style.display = "block";
-	}) 
+	}) 	
+}
 
-	
+const toggleClientsMenu = () => {
+	const menu = document.getElementById("clientsMenu");
+	const toggle = document.getElementById("toggle-clients");
+	const img = document.getElementById("toggle-clients-img");
+	const wrapper = document.getElementById("clients-wrapper");
+	toggle.addEventListener("click",()=>{
+		menu.classList.toggle("bigMenu--active");
+		wrapper.classList.toggle("bigMenu--active");
+		
+	})
+
+	img.addEventListener("click",()=>{
+		menu.classList.toggle("bigMenu--active");
+		wrapper.classList.toggle("bigMenu--active");
+		
+	})
 }
 // turn off clickable links
 $("a").click 
@@ -182,6 +200,7 @@ $("a").click
     } 
 );
 // Run
+toggleClientsMenu();
 toggleBigSubmenu();
 toggleArrowDown();
 toggleText("big-text-content","big-text-toggle","big-text-arrow");

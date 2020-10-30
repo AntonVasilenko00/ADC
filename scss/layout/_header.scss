@@ -244,6 +244,7 @@
 
 // Submenu
 .toggle-clients {
+	z-index: 1000;
 	position: relative;
 	.clients-submenu {
 		border-radius: 1rem;
@@ -566,8 +567,8 @@
 		}
 	}
 	#header {
-		overflow-y: visible;
-		overflow-x: hidden;
+		// overflow-y: visible;
+		// overflow-x: hidden;
 		padding: 0;
 		z-index: 5;
 		transition: all 0.4s ease-in;
@@ -579,7 +580,6 @@
 		right: 0;
 		width: 100%;
 		min-height: 100vh;
-		height: fit-content;
 		position: fixed !important;
 		align-items: center;
 		flex-direction: column;
@@ -591,7 +591,7 @@
 			width: 100%;
 			flex-direction: column;
 			li {
-				padding-bottom: 3rem;
+				padding-bottom: 20px;
 				margin-left: 0;
 				display: inline-block;
 				width: 100%;
@@ -600,17 +600,15 @@
 				}
 				border-bottom: 1px solid rgba($clr-white, 0.1);
 				font-size: 16px;
-				margin-top: 7rem;
+				margin-top: 20px;
 			}
 		}
 		// BIG SUBMENU
 		.submenu-wrapper {
-			overflow-y: scroll;
-			// height: auto;
+			// overflow-y: scroll;
 			position: unset;
 			display: none;
 			padding: 0;
-			height: 600vh;
 		}
 		.submenu {
 			position: unset;
@@ -656,12 +654,13 @@
 		}
 
 		.submenu-second-group {
-			overflow-y: auto;
+			// overflow-y: auto;
 			margin: 0;
-			height: fit-content;
+			// height: fit-content;
 		}
 
 		.submenu-links {
+			padding-bottom: 50vh;
 			color: $clr-white;
 			flex-direction: column;
 			a:hover {
@@ -682,6 +681,7 @@
 			width: 4rem;
 		}
 		.active-phone {
+			display: none;
 			margin-top: 7rem;
 		}
 		.phone-info {
@@ -717,8 +717,33 @@
 		position: fixed;
 		display: block;
 	}
+	.split-btn {
+		display: none;
+	}
 	.search-btn {
-		margin-top: 3rem;
-		width: 5rem;
+		// margin-top: -20rem;
+		margin-top: -12rem;
+		width: 20px;
+	}
+	#search-form {
+		input {
+			font-size: 14px;
+			padding: 0 55rem 0 5%;
+			transform: translateY(60%);
+			height: 10vh;
+			&::placeholder {
+				font-size: 9px;
+			}
+		}
+		button {
+			font-size: 14px;
+			transform: translate(-20%, 70%);
+			padding: 3vh 15rem;
+		}
+	}
+	li.toggle-clients {
+		a {
+			text-shadow: none !important;
+		}
 	}
 }
