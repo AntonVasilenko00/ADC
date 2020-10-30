@@ -1,5 +1,11 @@
 // paths
-$github: ""; //"https://antonvasilenko00.github.io/ADC/.";
+$use-github-host: true;
+$github: "";
+@if ($use-github-host) {
+	$github: "https://antonvasilenko00.github.io/ADC/.";
+} @else {
+	$github: "";
+}
 
 // colors
 $clr-white: #fff;
