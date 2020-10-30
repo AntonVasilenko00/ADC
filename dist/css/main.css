@@ -1833,6 +1833,7 @@ a {
     height: unset;
   }
   .services-box img {
+    height: 180px;
     width: 70rem;
   }
   .services-block-title {
