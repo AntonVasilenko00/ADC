@@ -2684,7 +2684,7 @@ input:checked + .text-box {
   .about-center .girl1 {
     position: static;
     width: 70%;
-    height: auto;
+    height: 380px;
     z-index: 1;
   }
   .about-center .girl2 {
