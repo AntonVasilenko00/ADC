@@ -69,7 +69,7 @@
 		left: 0;
 		width: 100%;
 		height: auto;
-		padding-top: 4rem;
+		padding-top: 8rem;
 	}
 	img {
 		transition: all 0.2s ease-out;
@@ -93,7 +93,6 @@
 	}
 	.submenu {
 		overflow-x: hidden;
-		padding-top: 2rem;
 		// padding-bottom: 4.07rem;
 		background: $clr-white;
 		width: 100%;
@@ -270,7 +269,7 @@
 		}
 	}
 	.submenu-wrapper {
-		// display: block;
+		display: block;
 		width: 100%;
 		height: auto;
 		position: absolute;
@@ -485,6 +484,16 @@
 	#header-nav {
 		li {
 			font-size: 9px;
+		}
+	}
+	.submenu {
+		h1,
+		h2 {
+			font-size: 14px !important;
+		}
+		p {
+			height: auto;
+			font-size: 9px !important;
 		}
 	}
 }

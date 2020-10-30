@@ -595,7 +595,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 
 .toggle-services img {
@@ -622,7 +622,6 @@
 
 .toggle-services .submenu {
   overflow-x: hidden;
-  padding-top: 2rem;
   background: #fff;
   width: 100%;
   position: absolute;
@@ -814,6 +813,7 @@
 }
 
 .toggle-clients .submenu-wrapper {
+  display: block;
   width: 100%;
   height: auto;
   position: absolute;
@@ -1034,6 +1034,14 @@
   }
   #header-nav li {
     font-size: 9px;
+  }
+  .submenu h1,
+  .submenu h2 {
+    font-size: 14px !important;
+  }
+  .submenu p {
+    height: auto;
+    font-size: 9px !important;
   }
 }
 
