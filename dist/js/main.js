@@ -7,6 +7,8 @@ function toggleSearchDropdown() {
 }
 // Big menu mobile
 const toggleBigSubmenu = () => {
+	const link1 = document.getElementById("first-sub-link");
+	link1.classList.remove("submenu-active");
 	const menu = document.getElementById("bigSubmenu");
 	const wrapper = document.getElementById("bigSubmenuWrapper");
 	const toggle = document.getElementById("bigSubmenuToggle");
@@ -21,8 +23,7 @@ const toggleBigSubmenu = () => {
 		menu.classList.toggle("bigMenu--active");
 		arrow.classList.toggle("arrow--rotate");
 	}) 
-	
-	
+		
 	
 }
 // services
@@ -86,13 +87,17 @@ splitDrop.addEventListener("mouseout", () => {
 });
 
 // Burger
+
 const burger = document.querySelector(".burger");
 const header = document.querySelector("#header");
 const wrapper = document.getElementById("bigSubmenuWrapper");
+const arrow = document.getElementById("bigSubmenuArrow");
 burger.addEventListener("click", () => {
 	burger.classList.toggle("burger-active");
 	header.classList.toggle("header-active");
 	wrapper.classList.remove("bigMenu--active")
+	arrow.classList.remove("arrow--rotate");
+
 });
 function endScroll(id){
 	document.getElementById(id).scrollLeft += 1000;
