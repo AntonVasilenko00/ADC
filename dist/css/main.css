@@ -1116,7 +1116,7 @@
     background: rgba(26, 26, 34, 0.99);
     right: 0;
     width: 100%;
-    min-height: 100vh;
+    min-height: 900px;
     position: fixed !important;
     align-items: center;
     flex-direction: column;
@@ -2682,7 +2682,7 @@ input:checked + .text-box {
     width: 100%;
   }
   .about-center .girl1 {
-    position: unset;
+    position: static;
     width: 70%;
     height: auto;
     z-index: 1;

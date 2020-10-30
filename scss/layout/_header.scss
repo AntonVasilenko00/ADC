@@ -579,7 +579,9 @@
 		background: rgba($clr-dark, 0.99);
 		right: 0;
 		width: 100%;
-		min-height: 100vh;
+		// min-height: 100vh;
+		min-height: 900px;
+		// height: 600vh;
 		position: fixed !important;
 		align-items: center;
 		flex-direction: column;
