@@ -94,11 +94,21 @@ const header = document.querySelector("#header");
 const wrapper = document.getElementById("bigSubmenuWrapper");
 const arrow = document.getElementById("bigSubmenuArrow");
 
+const menu = document.getElementById("clientsMenu");
+const toggle = document.getElementById("toggle-clients");
+const img = document.getElementById("toggle-clients-img");
+const wrapper2 = document.getElementById("clients-wrapper");
+
 burger.addEventListener("click", () => {
 	burger.classList.toggle("burger-active");
 	header.classList.toggle("header-active");
 	wrapper.classList.remove("bigMenu--active")
 	arrow.classList.remove("arrow--rotate");
+
+	menu.classList.remove("bigMenu--active");
+	wrapper2.classList.remove("bigMenu--active");
+	img.classList.remove("arrow--rotate");
+	
 
 });
 function endScroll(id){
@@ -181,12 +191,15 @@ const toggleClientsMenu = () => {
 	toggle.addEventListener("click",()=>{
 		menu.classList.toggle("bigMenu--active");
 		wrapper.classList.toggle("bigMenu--active");
+		img.classList.toggle("arrow--rotate");
+		
 		
 	})
-
+	
 	img.addEventListener("click",()=>{
 		menu.classList.toggle("bigMenu--active");
 		wrapper.classList.toggle("bigMenu--active");
+		img.classList.toggle("arrow--rotate");
 		
 	})
 }

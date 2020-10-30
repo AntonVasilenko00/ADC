@@ -1259,8 +1259,34 @@
     transform: translate(-20%, 70%);
     padding: 3vh 15rem;
   }
-  li.toggle-clients a {
-    text-shadow: none !important;
+  #header .toggle-clients a {
+    text-shadow: none;
+  }
+  #header .toggle-clients:hover img {
+    transform: none;
+  }
+  #header .toggle-clients .submenu-wrapper {
+    width: 100%;
+    height: auto;
+    position: unset;
+  }
+  #header .toggle-clients .clients-submenu {
+    padding-bottom: 50vh;
+    background: none;
+    border-radius: 0;
+    width: 100%;
+    height: fit-content;
+    display: block;
+    position: static;
+  }
+  #header .toggle-clients .clients-submenu li {
+    padding-bottom: unset;
+    display: block;
+    width: 100%;
+  }
+  #header .toggle-clients .clients-submenu a {
+    color: #fff;
+    width: 100%;
   }
 }
 

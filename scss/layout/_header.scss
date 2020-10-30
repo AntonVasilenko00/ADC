@@ -741,9 +741,35 @@
 			padding: 3vh 15rem;
 		}
 	}
-	li.toggle-clients {
+	#header .toggle-clients {
 		a {
-			text-shadow: none !important;
+			text-shadow: none;
+		}
+		&:hover img {
+			transform: none;
+		}
+		.submenu-wrapper {
+			width: 100%;
+			height: auto;
+			position: unset;
+		}
+		.clients-submenu {
+			padding-bottom: 50vh;
+			background: none;
+			border-radius: 0;
+			width: 100%;
+			height: fit-content;
+			display: block;
+			position: static;
+			li {
+				padding-bottom: unset;
+				display: block;
+				width: 100%;
+			}
+			a {
+				color: $clr-white;
+				width: 100%;
+			}
 		}
 	}
 }
