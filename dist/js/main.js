@@ -5,22 +5,42 @@ function toggleSearchDropdown() {
 	document.getElementById("search-field").focus();
 	document.getElementById("search-field").select();
 }
+// Big menu mobile
+const toggleBigSubmenu = () => {
+	const menu = document.getElementById("bigSubmenu");
+	const wrapper = document.getElementById("bigSubmenuWrapper");
+	const toggle = document.getElementById("bigSubmenuToggle");
+	const arrow = document.getElementById("bigSubmenuArrow");
+	toggle.addEventListener("click",()=>{
+		wrapper.classList.toggle("bigMenu--active");
+		menu.classList.toggle("bigMenu--active");
+		arrow.classList.toggle("arrow--rotate");
+	}) 
+	arrow.addEventListener("click",()=>{
+		wrapper.classList.toggle("bigMenu--active");
+		menu.classList.toggle("bigMenu--active");
+		arrow.classList.toggle("arrow--rotate");
+	}) 
+	
+	
+	
+}
 // services
 const otherServicesToggle = () =>{
 	const links = document.querySelectorAll(".service-link");
 	const footerDividers = document.querySelectorAll(".service-links .footer-divider");
-
+	
 	links.forEach(function(link,i){
 		link.addEventListener("click",()=>{
 			// close other
 			links.forEach(function(link2,i){
-			const ul = link2.nextSibling.nextSibling;
-			const plus = link2.children[0];
-			if((plus.innerHTML=="-")  && (link != link2)){
-				plus.innerHTML = "+";
-				ul.classList.remove("active");
-				footerDividers[i].classList.toggle("hide");
-			}
+				const ul = link2.nextSibling.nextSibling;
+				const plus = link2.children[0];
+				if((plus.innerHTML=="-")  && (link != link2)){
+					plus.innerHTML = "+";
+					ul.classList.remove("active");
+					footerDividers[i].classList.toggle("hide");
+				}
 			})
 			// open
 			const ul = link.nextSibling.nextSibling;
@@ -28,25 +48,25 @@ const otherServicesToggle = () =>{
 			plus.innerHTML=="+" ? (plus.innerHTML) = "-" : (plus.innerHTML = "+"); 
 			ul.classList.toggle("active");
 			footerDividers[i].classList.toggle("hide");
-
+			
 		});
 	} );
-		
-	}
-// function otherServicesToggle() {
-// 	document.getElementById("other-services-dropdown-content").classList.toggle("active");
-// 	const p = document.getElementById("last-plus");
-// 	p.innerHTML == "+" ? (p.innerHTML = "-") : (p.innerHTML = "+");
-// 	document.getElementById("last-divider").classList.toggle("hide");
-
-// Phone card
-function togglePhone() {
-	document.getElementById("header-phone-card").classList.add("active");
-	document.getElementById("phone-toggle-info").classList.add("hide");
-	document.getElementById("phone-toggle").classList.add("hide");
+	
 }
-
-document.getElementById("header-phone-card").addEventListener("mouseleave", () => {
+// function otherServicesToggle() {
+	// 	document.getElementById("other-services-dropdown-content").classList.toggle("active");
+	// 	const p = document.getElementById("last-plus");
+	// 	p.innerHTML == "+" ? (p.innerHTML = "-") : (p.innerHTML = "+");
+	// 	document.getElementById("last-divider").classList.toggle("hide");
+	
+	// Phone card
+	function togglePhone() {
+		document.getElementById("header-phone-card").classList.add("active");
+		document.getElementById("phone-toggle-info").classList.add("hide");
+		document.getElementById("phone-toggle").classList.add("hide");
+	}
+	
+	document.getElementById("header-phone-card").addEventListener("mouseleave", () => {
 	document.getElementById("header-phone-card").classList.remove("active");
 	document.getElementById("phone-toggle-info").classList.remove("hide");
 	document.getElementById("phone-toggle").classList.remove("hide");
@@ -68,9 +88,11 @@ splitDrop.addEventListener("mouseout", () => {
 // Burger
 const burger = document.querySelector(".burger");
 const header = document.querySelector("#header");
+const wrapper = document.getElementById("bigSubmenuWrapper");
 burger.addEventListener("click", () => {
 	burger.classList.toggle("burger-active");
 	header.classList.toggle("header-active");
+	wrapper.classList.remove("bigMenu--active")
 });
 function endScroll(id){
 	document.getElementById(id).scrollLeft += 1000;
@@ -79,7 +101,7 @@ const horizontalScroll = (toggleId, leftId, rightId) => {
 	const toggle = document.getElementById(toggleId);
 	left = document.getElementById(leftId);
 	right = document.getElementById(rightId);
-
+	
 	if(toggle && left && right) {
 		left.addEventListener('click',()=>{
 			if(toggle.scrollLeft == 0){
@@ -155,6 +177,7 @@ $("a").click
     } 
 );
 // Run
+toggleBigSubmenu();
 toggleArrowDown();
 toggleText("big-text-content","big-text-toggle","big-text-arrow");
 horizontalScroll("letters-scroll","letters-left","letters-right");
